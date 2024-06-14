@@ -20,7 +20,7 @@ if choice == "Employee Work Management Portal":
         	st.write(data[["Employee ID",'Location','Date','Day','Shift Timing','Tasks']])
 		
 	else:
-	   st.write("""# If you dont know your Employee number or work is not allocated, Please contact your organisation""")
+	   st.write("""###### If you dont know your Employee number or work is not allocated, Please contact your organisation""")
                 
 else:
 	st.subheader(" What we do")
