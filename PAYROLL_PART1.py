@@ -22,9 +22,10 @@ df = pd.concat(map(pd.read_csv, ['E001_EMP_DATA.csv','E012_EMP_DATA.csv']))
 
 # Condition checking              
 if emp_number:
-    TIMELOG = df[df['Employee ID'] == emp_number]
-    st.write("""### Check Your Timesheet allocation here""")
-    st.write(TIMELOG)
+    while True:
+        TIMELOG = df[df['Employee ID'] == emp_number]
+        st.write("""### Check Your Timesheet allocation here""")
+        st.write(TIMELOG)
     #E012 = df[df['Employee ID'] == emp_number]
     #st.write("""### Check Your Timesheet allocation here""")
     #st.write(E012)
