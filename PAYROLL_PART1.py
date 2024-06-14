@@ -24,10 +24,10 @@ df = pd.concat(map(pd.read_csv, ['E001_EMP_DATA.csv','E012_EMP_DATA.csv']))
 if emp_number:
     E001 = df1[df1['Employee ID'] == emp_number]
     st.write("""### Check Your Timesheet allocation here""")
-    st.write(df1)
-    df2[df2['Employee ID'] == emp_number]
+    st.write(E001)
+    E012 = df2[df2['Employee ID'] == emp_number]
     st.write("""### Check Your Timesheet allocation here""")
-    st.write(df2)
+    st.write(E012)
     #current_month_salary = int(row['Net Pay March'])
     #previous_month_salary = int(row['Net Pay Feb'])
     #difference = current_month_salary - previous_month_salary
