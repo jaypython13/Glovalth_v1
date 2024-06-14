@@ -21,9 +21,9 @@ df2 = pd.read_csv('E012_EMP_DATA.csv',usecols = ['Employee ID', 'Employee Name',
 # Condition checking              
 if emp_number:
     e001 = df1[df1['Employee ID'] == emp_number]
-    e012 = df2[df2['Employee ID'] == emp_number]
     st.write("""### Check Your Timesheet allocation here""")
     st.write(e001)
+    e012 = df2[df2['Employee ID'] == emp_number]
     st.write("""### Check Your Timesheet allocation here""")
     st.write(e012)
     #current_month_salary = int(row['Net Pay March'])
