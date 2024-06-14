@@ -22,10 +22,10 @@ df = pd.concat(map(pd.read_csv, ['E001_EMP_DATA.csv','E012_EMP_DATA.csv']))
 
 # Condition checking              
 if emp_number:
-    E001 = df1[df1['Employee ID'] == emp_number]
+    E001 = df[df['Employee ID'] == emp_number]
     st.write("""### Check Your Timesheet allocation here""")
     st.write(E001)
-    E012 = df2[df2['Employee ID'] == emp_number]
+    E012 = df[df['Employee ID'] == emp_number]
     st.write("""### Check Your Timesheet allocation here""")
     st.write(E012)
     #current_month_salary = int(row['Net Pay March'])
