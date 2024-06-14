@@ -25,7 +25,7 @@ if emp_number:
     E001 = df1[df1['Employee ID'] == emp_number]
     st.write("""### Check Your Timesheet allocation here""")
     st.write(df1)
-    df2[df2['Employee ID'] == emp_number]:
+    df2[df2['Employee ID'] == emp_number]
     st.write("""### Check Your Timesheet allocation here""")
     st.write(df2)
     #current_month_salary = int(row['Net Pay March'])
