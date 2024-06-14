@@ -16,7 +16,7 @@ df2 = pd.read_csv('E012_EMP_DATA.csv',usecols = ['Employee ID','Location', 'Date
 
 
 #df = pd.concat(map(pd.read_csv, ['E001_EMP_DATA.csv','E012_EMP_DATA.csv']))
-df =pd.concat(map(df1, df2)
+df =pd.concat(map(df1, df2))
 #def netpay_diff(emp_number):    
     #netpay_diff = df1["Net Pay"]-df2["Net Pay"]
     #st.write(netpay_diff)
