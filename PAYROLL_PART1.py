@@ -34,8 +34,8 @@ if emp_number:
     #previous_month_salary = int(row['Net Pay Feb'])
     #difference = current_month_salary - previous_month_salary
     #st.write("The workplan for employee number {} is:".format(), difference)  
-        else:
-            st.write("Employee number not found. Please contact your organisation")
+else:
+    st.write("Employee number not found. Please contact your organisation")
                 
     
 
