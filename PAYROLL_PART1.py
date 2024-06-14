@@ -5,7 +5,8 @@ import pandas as pd
 # Streamlit User Interface part
 st.set_page_config(page_title ="Glovalth", page_icon =":guardsman:", layout ="wide")
 st.image("Glovalth_logo.jpeg", width = 400)
-st.title("Glovalth Health Tech Care \n Welcome to Care Home Employee Time Sheet Management system")
+st.title("Glovalth Health Tech Care")
+st.title(" Welcome to Glovalth Employee TimeSheet Management system Portal")
 emp_number = st.text_input("Enter Employee ID")
 
 df1 = pd.read_csv('E001_EMP_DATA.csv',usecols = ['Employee ID','Location', 'Date','Day', 'Shift Timing','Tasks'])
