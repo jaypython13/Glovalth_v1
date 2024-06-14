@@ -22,10 +22,9 @@ df = pd.concat(map(pd.read_csv, ['E001_EMP_DATA.csv','E012_EMP_DATA.csv']))
 
 # Condition checking              
 if emp_number:
-    while True:
-        TIMELOG = df[df['Employee ID'] == emp_number]
-        st.write("""### Check Your Timesheet allocation here""")
-        st.write(TIMELOG)
+        if df[df['Employee ID'] == emp_number]:
+            st.write("""### Check Your Timesheet allocation here""")
+            st.write(TIMELOG)
     #E012 = df[df['Employee ID'] == emp_number]
     #st.write("""### Check Your Timesheet allocation here""")
     #st.write(E012)
@@ -33,8 +32,8 @@ if emp_number:
     #previous_month_salary = int(row['Net Pay Feb'])
     #difference = current_month_salary - previous_month_salary
     #st.write("The workplan for employee number {} is:".format(), difference)  
-else:
-    st.write("Employee number not found. Please contact your organisation")
+        else:
+            st.write("Employee number not found. Please contact your organisation")
                 
     
 
