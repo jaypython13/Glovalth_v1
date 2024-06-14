@@ -23,5 +23,5 @@ if choice == "Employee Work Management Portal":
 	   st.write("Employee number not found. Please contact your organisation")
                 
 else:
-    st.write("Our Business team ensures smooth and efficient operations, supporting every aspect of our business. From handling client inquiries to managing internal processes, they are the backbone of our organization. Their dedication to excellence and attention to detail guarantee high-quality service and operational integrity.")
+    st.write(""" ### Our Business team ensures smooth and efficient operations, supporting every aspect of our business. From handling client inquiries to managing internal processes, they are the backbone of our organization. Their dedication to excellence and attention to detail guarantee high-quality service and operational integrity.""")
 
