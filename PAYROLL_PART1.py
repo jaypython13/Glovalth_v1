@@ -27,6 +27,8 @@ if emp_number:
     data = df[df['Employee ID'] == emp_number]
     st.write("""### Check Your Timesheet allocation here""")
     st.write(data[["Employee ID",'Location','Date','Day','Shift Timing','Tasks']])
+    Date = st.selectbox("Select the date", df.columns)
+	time = st.selectbox("Select the date", df.columns)
     #E012 = df[df['Employee ID'] == emp_number]
     #st.write("""### Check Your Timesheet allocation here""")
     #st.write(E012)
