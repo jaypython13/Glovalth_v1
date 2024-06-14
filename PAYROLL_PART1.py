@@ -8,7 +8,7 @@ st.image("Glovalth_logo.jpeg", width = 400)
 st.title("Glovalth Health Tech Care \n Welcome to Care Home Employee Time Sheet Management system")
 emp_number = st.text_input("Enter Employee ID")
 
-df1 = pd.read_csv('E001_EMP_DATA.csv', usecols = ['Employee ID', 'Employee Name', 'Organisation ID'])
+df1 = pd.read_csv('E001_EMP_DATA.csv')
 df2 = pd.read_csv('E012_EMP_DATA.csv',usecols = ['Employee ID', 'Employee Name', 'Organisation ID'])
 
 #df = pd.concat(map(pd.read_csv, ['Feb_Data.csv','March_Data.csv']))
@@ -22,9 +22,9 @@ df2 = pd.read_csv('E012_EMP_DATA.csv',usecols = ['Employee ID', 'Employee Name',
 if emp_number:
     e001 = df1[df1['Employee ID'] == emp_number]
     e012 = df2[df2['Employee ID'] == emp_number]
-    st.write("""### E001 employee data""")
+    st.write("""### Check Your Timesheet allocation here""")
     st.write(e001)
-    st.write("""### E012 employee data""")
+    st.write("""### Check Your Timesheet allocation here""")
     st.write(e012)
     #current_month_salary = int(row['Net Pay March'])
     #previous_month_salary = int(row['Net Pay Feb'])
