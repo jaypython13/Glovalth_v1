@@ -7,8 +7,8 @@ st.image("logo.png", width = 400)
 st.title("Glovalth Health private Limited \n Care Home EmployeeTime Sheet Management")
 emp_number = st.text_input("Enter Employee ID")
 
-df1 = pd.read_csv('E001_Emp_Data.csv', usecols = ['Employee ID', 'Employee Name', 'Organisation ID'])
-df2 = pd.read_csv('E012_Emp_Data.csv',usecols = ['Employee ID', 'Employee Name', 'Organisation ID'])
+df1 = pd.read_csv('E001_EMP_DATA.csv', usecols = ['Employee ID', 'Employee Name', 'Organisation ID'])
+df2 = pd.read_csv('E012_EMP_DATA.csv',usecols = ['Employee ID', 'Employee Name', 'Organisation ID'])
 
 #df = pd.concat(map(pd.read_csv, ['Feb_Data.csv','March_Data.csv']))
 df =pd.concat(df1, df2)
