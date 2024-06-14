@@ -16,11 +16,11 @@ if choice == "Employee Work Management Portal":
 	df = pd.concat(map(pd.read_csv, ['E001_EMP_DATA.csv','E012_EMP_DATA.csv']))   
 	if emp_number:
         	data = df[df['Employee ID'] == emp_number]
-       		st.write("""### Check Your Timesheet allocation here""")
+       		st.write("""## Check Your Timesheet allocation here""")
         	st.write(data[["Employee ID",'Location','Date','Day','Shift Timing','Tasks']])
 		
 	else:
-	   st.write("""## If you dont know your Employee number or work is not allocated, Please contact your organisation""")
+	   st.write("""# If you dont know your Employee number or work is not allocated, Please contact your organisation""")
                 
 else:
 	st.subheader(" What we do")
