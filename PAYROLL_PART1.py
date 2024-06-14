@@ -4,7 +4,7 @@ import pandas as pd
 
 # Streamlit User Interface part
 st.set_page_config(page_title ="Glovalth", page_icon =":guardsman:", layout ="wide")
-st.image("Glovalth_logo.png", width = 400)
+st.image("Glovalth_logo.jpeg", width = 400)
 st.title("Glovalth Health private Limited \n Care Home EmployeeTime Sheet Management")
 emp_number = st.text_input("Enter Employee ID")
 
