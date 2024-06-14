@@ -18,7 +18,7 @@ if choice == "Employee Work Management Portal":
         	data = df[df['Employee ID'] == emp_number]
        		st.write("""## Check Your Timesheet allocation here""")
         	st.write(data[["Employee ID",'Location','Date','Day','Shift Timing','Tasks']])
-		option = st.selectbox("Choose Here", data.columns)
+		option = st.selectbox("Choose Here",data.columns)
 		st.write(data.option)
 		
 	else:
