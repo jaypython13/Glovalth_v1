@@ -11,7 +11,9 @@ emp_number = st.text_input("Enter Employee ID")
 df1 = pd.read_csv('E001_EMP_DATA.csv',usecols = ['Employee ID','Location', 'Date','Day', 'Shift Timing','Tasks'])
 df2 = pd.read_csv('E012_EMP_DATA.csv',usecols = ['Employee ID','Location', 'Date','Day', 'Shift Timing','Tasks'])
 
-#df = pd.concat(map(pd.read_csv, ['Feb_Data.csv','March_Data.csv']))
+
+
+df = pd.concat(map(pd.read_csv, ['E001_EMP_DATA.csv','E012_EMP_DATA.csv']))
 #df =pd.concat(df1, df2)
 #def netpay_diff(emp_number):    
     #netpay_diff = df1["Net Pay"]-df2["Net Pay"]
@@ -20,12 +22,12 @@ df2 = pd.read_csv('E012_EMP_DATA.csv',usecols = ['Employee ID','Location', 'Date
 
 # Condition checking              
 if emp_number:
-    if df1[df1['Employee ID'] == emp_number]:
-        st.write("""### Check Your Timesheet allocation here""")
-        st.write(df1)
-    if df2[df2['Employee ID'] == emp_number]:
-        st.write("""### Check Your Timesheet allocation here""")
-        st.write(df2)
+    E001 = df1[df1['Employee ID'] == emp_number]
+    st.write("""### Check Your Timesheet allocation here""")
+    st.write(df1)
+    df2[df2['Employee ID'] == emp_number]:
+    st.write("""### Check Your Timesheet allocation here""")
+    st.write(df2)
     #current_month_salary = int(row['Net Pay March'])
     #previous_month_salary = int(row['Net Pay Feb'])
     #difference = current_month_salary - previous_month_salary
