@@ -8,7 +8,7 @@ st.image("Glovalth_logo.jpeg", width = 400)
 st.title("Glovalth Health Tech Care \n Welcome to Care Home Employee Time Sheet Management system")
 emp_number = st.text_input("Enter Employee ID")
 
-df1 = pd.read_csv('E001_EMP_DATA.csv', ,usecols = ['Location', 'Date','Day', 'Shift Timing','Tasks']))
+df1 = pd.read_csv('E001_EMP_DATA.csv',usecols = ['Location', 'Date','Day', 'Shift Timing','Tasks'])
 df2 = pd.read_csv('E012_EMP_DATA.csv',usecols = ['Location', 'Date','Day', 'Shift Timing','Tasks'])
 ])
 
