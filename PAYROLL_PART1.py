@@ -28,3 +28,9 @@ else:
 	st.info(""" ### Our Business team ensures smooth and efficient operations, supporting every aspect of our business. From handling client inquiries to managing internal processes, they are the backbone of our organization. Their dedication to excellence and attention to detail guarantee high-quality service and operational integrity.""")
 	st.subheader ("Our Base")
 	st.info(""" ### Proudly serving the UK’s care homes from our Leicester headquarters. We specialize in timesheet management solutions tailored for the care industry. Our tools simplify payroll, boost productivity, and ensure compliance. Partner with us for efficient and reliable staff management.""")
+	st.subheader("Contact US")
+	st.info(""" ### Get in touch with us today to discover how our HR management solutions can transform your business. Whether you have questions, need support, or want to schedule a consultation, our dedicated team is here to help. Reach out via phone, email, or our online form – we look forward to connecting with you!""")
+	st.info( """ ## Address: LEICESTER, St George’s House, 3rd floor, St George’s house, Leicestershire, United Kingdom.""")
+	st.info( """ Telephone: +44 7436 295021 """)
+	st.info( """ Email: glovalthhealthtechcarelmt@gmail.com """)
+
