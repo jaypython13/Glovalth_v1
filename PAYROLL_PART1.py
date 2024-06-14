@@ -7,20 +7,15 @@ st.set_page_config(page_title ="Glovalth", page_icon =":guardsman:", layout ="wi
 st.image("Glovalth_logo.jpeg", width = 400)
 st.title("Glovalth Health Tech Care")
 st.title(" Welcome to Glovalth Employee TimeSheet Management system Portal")
+menu = ["About Us","Employee Work plan"]
+choice = st.sidebar.selectbox("Menu",menu)
 emp_number = st.text_input(r"$\textsf{\Large Enter your Employee ID here}$")
 
 
-df1 = pd.read_csv('E001_EMP_DATA.csv',usecols = ['Employee ID','Location', 'Date','Day', 'Shift Timing','Tasks'])
-df2 = pd.read_csv('E012_EMP_DATA.csv',usecols = ['Employee ID','Location', 'Date','Day', 'Shift Timing','Tasks'])
-
-
-
+#df1 = pd.read_csv('E001_EMP_DATA.csv',usecols = ['Employee ID','Location', 'Date','Day', 'Shift Timing','Tasks'])
+#df2 = pd.read_csv('E012_EMP_DATA.csv',usecols = ['Employee ID','Location', 'Date','Day', 'Shift Timing','Tasks'])
 df = pd.concat(map(pd.read_csv, ['E001_EMP_DATA.csv','E012_EMP_DATA.csv']))
-#df =pd.concat(map(df1, df2))
-#def netpay_diff(emp_number):    
-    #netpay_diff = df1["Net Pay"]-df2["Net Pay"]
-    #st.write(netpay_diff)
-    #return netpay_diff
+
 
 # Condition checking              
 if emp_number:
