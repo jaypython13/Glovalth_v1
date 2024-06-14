@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
 
+
 # Streamlit User Interface part
 st.set_page_config(page_title ="Glovalth", page_icon =":guardsman:", layout ="wide")
 st.image("logo.png", width = 400)
