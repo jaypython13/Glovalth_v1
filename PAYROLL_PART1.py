@@ -20,8 +20,8 @@ df2 = pd.read_csv('E012_EMP_DATA.csv',usecols = ['Employee ID', 'Employee Name',
 
 # Condition checking              
 if emp_number:
-    e001 = df1[df1['Employee ID'] == int(emp_number)]
-    e012 = df2[df2['Employee ID'] == int(emp_number)]
+    e001 = df1[df1['Employee ID'] == emp_number)]
+    e012 = df2[df2['Employee ID'] == emp_number)]
     st.write("""### E001 employee data""")
     st.write(e001)
     st.write("""### E012 employee data""")
@@ -29,7 +29,7 @@ if emp_number:
     #current_month_salary = int(row['Net Pay March'])
     #previous_month_salary = int(row['Net Pay Feb'])
     #difference = current_month_salary - previous_month_salary
-    st.write("The workplan for employee number {} is:".format(), difference)  
+    #st.write("The workplan for employee number {} is:".format(), difference)  
 else:
     st.write("Employee number not found. Please contact your organisation")
                 
