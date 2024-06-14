@@ -7,7 +7,8 @@ st.set_page_config(page_title ="Glovalth", page_icon =":guardsman:", layout ="wi
 st.image("Glovalth_logo.jpeg", width = 400)
 st.title("Glovalth Health Tech Care")
 st.title(" Welcome to Glovalth Employee TimeSheet Management system Portal")
-emp_number = st.text_input("Enter Employee ID", width = 200)
+emp_number = st.text_input(r"$\textsf{\Large Enter your Employee ID here}$")
+
 
 df1 = pd.read_csv('E001_EMP_DATA.csv',usecols = ['Employee ID','Location', 'Date','Day', 'Shift Timing','Tasks'])
 df2 = pd.read_csv('E012_EMP_DATA.csv',usecols = ['Employee ID','Location', 'Date','Day', 'Shift Timing','Tasks'])
