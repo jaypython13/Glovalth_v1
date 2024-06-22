@@ -44,9 +44,10 @@ if choice == "Employee Work Management Portal":
     	    				data[col] = pd.to_datetime(data[col])
     				except Exception:
     	    				pass
-
-    			if is_datetime64_any_dtype(data[col]):
+			if is_datetime64_any_dtype(data[col]):
         			data[col] = data[col].dt.tz_localize(None)
+
+		
 		modification_container = st.container()
 		with modification_container:
         		to_filter_columns = st.multiselect("Filter dataframe on", data.columns)
