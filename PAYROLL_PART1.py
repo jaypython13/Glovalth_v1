@@ -37,7 +37,7 @@ if choice == "Employee Work Management Portal":
 	emp_number = st.text_input(r"$\textsf{\Large Enter your Employee ID here}$")
 	df = pd.concat(map(pd.read_csv, ['E001_EMP_DATA.csv','E012_EMP_DATA.csv']))   
 	if emp_number:
-        	data = df[df['Employee ID'] == emp_number]
+		data = df[df['Employee ID'] == emp_number]
 		for col in data.columns:
 			if is_object_dtype(data[col]):
     				try:
