@@ -7,20 +7,20 @@ from pandas.api.types import (
     is_object_dtype,
 )
 
-def filter_dataframe(df: pd.DataFrame) -> pd.DataFrame:
-    """
-    Adds a UI on top of a dataframe to let viewers filter columns
+#def filter_dataframe(df: pd.DataFrame) -> pd.DataFrame:
+    #"""
+    #Adds a UI on top of a dataframe to let viewers filter columns
 
-    Args:
-        df (pd.DataFrame): Original dataframe
+    #Args:
+        #df (pd.DataFrame): Original dataframe
 
-    Returns:
-        pd.DataFrame: Filtered dataframe
-    """
-    modify = st.checkbox("Add filters")
+    #Returns:
+        #pd.DataFrame: Filtered dataframe
+    #"""
+    #modify = st.checkbox("Add filters")
 
-    if not modify:
-        return df 
+    #if not modify:
+        #return df 
 
 #df1 = pd.read_csv('E001_EMP_DATA.csv',usecols = ['Employee ID','Location', 'Date','Day', 'Shift Timing','Tasks'])#df2 = pd.read_csv('E012_EMP_DATA.csv',usecols = ['Employee ID','Location', 'Date','Day', 'Shift Timing','Tasks'])
 
