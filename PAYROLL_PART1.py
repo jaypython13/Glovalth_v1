@@ -38,7 +38,7 @@ if choice == "Employee Work Management Portal":
 	df = pd.concat(map(pd.read_csv, ['E001_EMP_DATA.csv','E012_EMP_DATA.csv']))   
 	if emp_number:
         	data = df[df['Employee ID'] == emp_number]
-		data = data.copy()
+		#data = data.copy()
 		# Try to convert datetimes into a standard format (datetime, no timezone)
 		for col in data.columns:
     			if is_object_dtype(data[col]):
