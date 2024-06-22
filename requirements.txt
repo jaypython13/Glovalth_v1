@@ -1,5 +1,5 @@
-streamlit==1.19.0
-pandas==1.4.4
+streamlit==1.36.0
+pandas==2.0.3
 pypi==2.1
 tabula==1.0.5
 SQLAlchemy==1.4.46
