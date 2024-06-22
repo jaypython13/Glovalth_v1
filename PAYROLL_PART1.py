@@ -22,18 +22,6 @@ def filter_dataframe(df: pd.DataFrame) -> pd.DataFrame:
     if not modify:
         return df 
 
-df = df.copy()
-
-# Try to convert datetimes into a standard format (datetime, no timezone)
-for col in df.columns:
-    if is_object_dtype(df[col]):
-    	try:
-    	    df[col] = pd.to_datetime(df[col])
-    	except Exception:
-    	    pass
-
-    if is_datetime64_any_dtype(df[col]):
-        df[col] = df[col].dt.tz_localize(None)
 #df1 = pd.read_csv('E001_EMP_DATA.csv',usecols = ['Employee ID','Location', 'Date','Day', 'Shift Timing','Tasks'])#df2 = pd.read_csv('E012_EMP_DATA.csv',usecols = ['Employee ID','Location', 'Date','Day', 'Shift Timing','Tasks'])
 
 # Streamlit User Interface part
@@ -51,6 +39,7 @@ if choice == "Employee Work Management Portal":
 	if emp_number:
         	data = df[df['Employee ID'] == emp_number]
        		st.write("""## Check Your Timesheet allocation here""")
+		modify = st.checkbox("Filter")
         	st.write(data[["Employee ID",'Location','Date','Day','Shift Timing','Tasks']])
 		df = df.copy()
 		# Try to convert datetimes into a standard format (datetime, no timezone)
@@ -65,20 +54,20 @@ if choice == "Employee Work Management Portal":
         			data[col] = data[col].dt.tz_localize(None)
 		modification_container = st.container()
 		with modification_container:
-        		to_filter_columns = st.multiselect("Filter dataframe on", df.columns)
+        		to_filter_columns = st.multiselect("Filter dataframe on", data.columns)
         		for column in to_filter_columns:
             			left, right = st.columns((1, 20))
             			# Treat columns with < 10 unique values as categorical
-            			if is_categorical_dtype(df[column]) or df[column].nunique() < 10:
+            			if is_categorical_dtype(data[column]) or data[column].nunique() < 10:
                 			user_cat_input = right.multiselect(
                    				 f"Values for {column}",
-                    				 df[column].unique(),
-                    				 default=list(df[column].unique()),
+                    				 data[column].unique(),
+                    				 default=list(data[column].unique()),
                 			)	
-					df = df[df[column].isin(user_cat_input)]
-				elif is_numeric_dtype(df[column]):
-                			_min = float(df[column].min())
-               	 			_max = float(df[column].max())
+					data = data[data[column].isin(user_cat_input)]
+				elif is_numeric_dtype(data[column]):
+                			_min = float(data[column].min())
+               	 			_max = float(data[column].max())
                 			step = (_max - _min) / 100
                 			user_num_input = right.slider(
                     				f"Values for {column}",
@@ -87,27 +76,27 @@ if choice == "Employee Work Management Portal":
                     				value=(_min, _max),
                     				step=step,
                 			)
-					df = df[df[column].between(*user_num_input)]
-            			elif is_datetime64_any_dtype(df[column]):
+					data = data[data[column].between(*user_num_input)]
+            			elif is_datetime64_any_dtype(data[column]):
                 			user_date_input = right.date_input(
                     				f"Values for {column}",
                     				value=(
-                        				df[column].min(),
-                        				df[column].max(),
+                        				data[column].min(),
+                        				data[column].max(),
                     				),
                 			)
                 			if len(user_date_input) == 2:
                     				user_date_input = tuple(map(pd.to_datetime, user_date_input))
                     				start_date, end_date = user_date_input
-                    				df = df.loc[df[column].between(start_date, end_date)]
+                    				data = data.loc[data[column].between(start_date, end_date)]
             			else:
                	 			user_text_input = right.text_input(
                     				f"Substring or regex in {column}",
                 			)
                 			if user_text_input:
-                    				df = df[df[column].astype(str).str.contains(user_text_input)]
+                    				data = data[data[column].astype(str).str.contains(user_text_input)]
 
-    		return df
+    
 	else:
 	   st.write("""##### If you dont know your Employee number or work is not allocated, Please contact your organisation""")
                 
