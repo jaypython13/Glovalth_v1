@@ -38,8 +38,6 @@ if choice == "Employee Work Management Portal":
 	df = pd.concat(map(pd.read_csv, ['E001_EMP_DATA.csv','E012_EMP_DATA.csv']))   
 	if emp_number:
         	data = df[df['Employee ID'] == emp_number]
-       		st.write("""## Check Your Timesheet allocation here""")
-        	st.write(data[["Employee ID",'Location','Date','Day','Shift Timing','Tasks']])
 		data = data.copy()
 		# Try to convert datetimes into a standard format (datetime, no timezone)
 		for col in data.columns:
@@ -94,7 +92,8 @@ if choice == "Employee Work Management Portal":
                 			)
                 			if user_text_input:
                     				data = data[data[column].astype(str).str.contains(user_text_input)]
-
+		st.write("""## Check Your Timesheet allocation here""")
+        	st.write(data[["Employee ID",'Location','Date','Day','Shift Timing','Tasks']])
     
 	else:
 	   st.write("""##### If you dont know your Employee number or work is not allocated, Please contact your organisation""")
