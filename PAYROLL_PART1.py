@@ -70,7 +70,7 @@ if choice == "Employee Work Management Portal":
                     				min_value=_min,
                     				max_value=_max,
                     				value=(_min, _max),
-                    				step=step,
+                    				step=step
                 			)
 					data = data[data[column].between(*user_num_input)]
             			elif is_datetime64_any_dtype(data[column]):
