@@ -28,7 +28,7 @@ if choice == "Employee Work Management Portal":
 		date_selection = col1.multiselect('select Date ', data.Date.unique().tolist(), key='date')
 		time_selection = col2.multiselect('select ShiftTime ', data.ShiftTime.unique().tolist(), key='time')
 		
-		st.write(data[data.Date.isin(choices)])
+		#st.write(data[data.Date.isin(choices)])
 		#search_date = data.Date.unique().tolist()
 		
 		#st.info("Choose the date below")
