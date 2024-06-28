@@ -59,8 +59,8 @@ if choice == "Employee Work Management Portal":
                    				 f"Values for {column}",
                     				 data[column].unique(),
                     				 default=list(data[column].unique()),
-					) data= data[data[column].isin(user_cat_input)]
-				#data = data[data[column].isin(user_cat_input)]
+					) 
+					data = data[data[column].isin(user_cat_input)]
 				elif is_numeric_dtype(data[column]):
                 			_min = float(data[column].min())
                	 			_max = float(data[column].max())
