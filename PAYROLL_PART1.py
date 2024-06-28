@@ -6,6 +6,57 @@ import csv
 
 #df1 = pd.read_csv('E001_EMP_DATA.csv',usecols = ['Employee ID','Location', 'Date','Day', 'Shift Timing','Tasks'])
 #df2 = pd.read_csv('E012_EMP_DATA.csv',usecols = ['Employee ID','Location', 'Date','Day', 'Shift Timing','Tasks'])
+def filters_widgets(df, columns=None, allow_single_value_widgets=False):
+    # Parse the df and get filter widgets based for provided columns
+    if not columns: #if columns not provided, use all columns to create widgets
+        columns=df.columns.tolist()
+    if allow_single_value_widgets:
+        threshold=0
+    else:
+        threshold=1
+    widget_dict = {}
+    filter_widgets = st.container()
+    filter_widgets.warning(
+        "After selecting filters press the 'Apply Filters' button at the bottom.")
+    if not allow_single_value_widgets:
+        filter_widgets.markdown("Only showing columns that contain more than 1 unique value.")
+    with filter_widgets.form(key="data_filters"):
+        not_showing = [] 
+        for y in df[columns]:
+            if str(y) in st.session_state: #update value from session state if exists
+                selected_opts = st.session_state[str(y)]
+            else: #if doesnt exist use all values as defaults
+                selected_opts = df[y].unique().tolist()
+            if len(df[y].unique().tolist()) > threshold: #checks if above threshold
+                widget_dict[y] = st.multiselect(
+                    label=str(y),
+                    options=df[y].unique().tolist(),
+                    default=selected_opts,
+                    key=str(y),
+                )
+            else:#if doesnt pass threshold
+                not_showing.append(y)
+        if not_showing:#if the list is not empty, show this warning
+            st.warning(
+                f"Not showing filters for {' '.join(not_showing)} since they only contain one unique value."
+            )
+        submit_button = st.form_submit_button("Apply Filters")
+    #reset button to return all unselected values back
+    reset_button = filter_widgets.button(
+        "Reset All Filters",
+        key="reset_buttons",
+        on_click=reset_filter_widgets_to_default,
+        args=(df, columns),
+    )
+    filter_widgets.warning(
+        "Dont forget to apply filters by pressing 'Apply Filters' at the bottom."
+    )
+
+def reset_filter_widgets_to_default(df, columns):
+    for y in df[columns]:
+        if str(y) in st.session_state:
+            del st.session_state[y]
+
 
 # Streamlit User Interface part
 st.set_page_config(page_title ="Glovalth", page_icon =":guardsman:", layout ="wide")
@@ -18,16 +69,19 @@ choice = st.sidebar.selectbox("Menu",menu)
 if choice == "Employee Work Management Portal":
 	st.title(" Welcome to Glovalth Employee TimeSheet Management system Portal")
 	emp_number = st.text_input(r"$\textsf{\Large Enter your Employee ID here}$")
-	df = pd.concat(map(pd.read_csv, ['E001_EMP_DATA.csv','E012_EMP_DATA.csv']))   
+	df1 = pd.concat(map(pd.read_csv, ['E001_EMP_DATA.csv','E012_EMP_DATA.csv']))   
 	if emp_number:
-		data = df[df['Employee ID'] == emp_number]
+		data = df1[df1['Employee ID'] == emp_number]
 		st.write("""## Check Your Timesheet allocation here""")
-		regular_search_term = data.Date.unique().tolist()
-		regular_search_time = data.ShiftTiming.unique().tolist()
-		choices = st.multiselect(" ",regular_search_term)
-		st.write(data[data.Date.isin(choices)])
-		choices = st.multiselect(" ",regular_search_time)
-		st.write(data[data.ShiftTiming.isin(choices)])
+		df=pd.DataFrame(data)
+		filters_widgets(df)
+
+		#regular_search_term = data.Date.unique().tolist()
+		#regular_search_time = data.ShiftTiming.unique().tolist()
+		#choices = st.multiselect(" ",regular_search_term)
+		#st.write(data[data.Date.isin(choices)])
+		#choices = st.multiselect(" ",regular_search_time)
+		#st.write(data[data.ShiftTiming.isin(choices)])
 		
 		#st.write(data[["Employee ID",'Location','Date','Day','Shift Timing','Tasks']])
     
