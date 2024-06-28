@@ -21,6 +21,9 @@ if choice == "Employee Work Management Portal":
 	df = pd.concat(map(pd.read_csv, ['E001_EMP_DATA.csv','E012_EMP_DATA.csv']))   
 	if emp_number:
 		data = df[df['Employee ID'] == emp_number]
+		regular_search_term =data.Day.unique().tolist()
+		choices = st.multiselect(" ",regular_search_term)
+		st.write(data[data.Day.isin(choices)]
 		st.write("""## Check Your Timesheet allocation here""")
 		st.write(data[["Employee ID",'Location','Date','Day','Shift Timing','Tasks']])
     
