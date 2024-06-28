@@ -17,7 +17,7 @@ choice = st.sidebar.selectbox("Menu",menu)
 if choice == "Employee Work Management Portal":
 	st.title(" Welcome to Glovalth Employee TimeSheet Management system Portal")
 	emp_number = st.text_input(r"$\textsf{\Large Enter your Employee ID here}$")
-	df = pd.concat(map(pd.read_csv, ['E001_EMP_DATA.csv','E012_EMP_DATA.csv']))   
+	df = pandas.concat(map(pandas.read_csv, ['E001_EMP_DATA.csv','E012_EMP_DATA.csv']))   
 	if emp_number:
 		data = df[df['Employee ID'] == emp_number]
 		st.write("""## Check Your Timesheet allocation here""")
