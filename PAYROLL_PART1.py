@@ -25,7 +25,7 @@ if choice == "Employee Work Management Portal":
 	df1 = pd.concat(map(pd.read_csv, ['E001_EMP_DATA.csv','E012_EMP_DATA.csv']))   
 	if emp_number:
 		data = df1[df1['Employee ID'] == emp_number]
-		st.write("""# Check Your Weekly Timesheet allocation here""")
+		st.write("""#### Check Your Weekly Timesheet allocation here""")
 		st.info(" Choose your date here")
 		search_date = data.Date.unique().tolist()
 		
