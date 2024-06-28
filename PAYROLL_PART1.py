@@ -13,7 +13,7 @@ import csv
 st.set_page_config(page_title ="Glovalth", page_icon =":guardsman:", layout ="wide")
 st.image("Glovalth_logo.jpeg", width = 400)
 st.title("Glovalth Health Tech Care Limited")
-menu = ["About Us","Employee Work Management Portal"]
+menu = ["About Us","Employee Work Management Portal", "Employee Attendence Form"]
 choice = st.sidebar.selectbox("Menu",menu)
 
 
@@ -44,7 +44,7 @@ if choice == "Employee Work Management Portal":
 	else:
 	   st.write("""##### If you dont know your Employee number or work is not allocated, Please contact your organisation""")
                 
-else:
+if choice == "About Us":
 	st.subheader ("Our Base")
 	st.info(""" #### Proudly serving the UK’s care homes from our Leicester headquarters. We specialize in timesheet management solutions tailored for the care industry. Our tools simplify payroll, boost productivity, and ensure compliance. Partner with us for efficient and reliable staff management.""")
 	st.subheader("What We Do")
