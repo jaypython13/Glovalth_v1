@@ -1,6 +1,6 @@
-numpy==1.26.4
-streamlit==1.36.0
-pandas==2.0.3
+numpy
+streamlit
+pandas
 #pypi==2.1
 #tabula==1.0.5
 #SQLAlchemy==1.4.46
