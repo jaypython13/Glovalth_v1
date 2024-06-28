@@ -30,9 +30,9 @@ if choice == "Employee Work Management Portal":
 		st.write(data[data.Date.isin(choices)])
 
 	
-		#search_time = data.unique().tolist()
-		#choices = st.multiselect(" ",search_time)
-		#st.write(data[data.ShiftTiming.isin(choices)])
+		search_time = data.ShiftTimeunique().tolist()
+		choices = st.multiselect(" ",search_time)
+		st.write(data[data.ShiftTime.isin(choices)])
 		
 		#st.write(data[["Employee ID",'Location','Date','Day','Shift Timing','Tasks']])
     
