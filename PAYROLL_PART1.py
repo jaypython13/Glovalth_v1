@@ -8,8 +8,6 @@ import csv
 #df2 = pd.read_csv('E012_EMP_DATA.csv',usecols = ['Employee ID','Location', 'Date','Day', 'Shift Timing','Tasks'])
 
         
-             
-      
 
 # Streamlit User Interface part
 st.set_page_config(page_title ="Glovalth", page_icon =":guardsman:", layout ="wide")
@@ -25,10 +23,9 @@ if choice == "Employee Work Management Portal":
 	df1 = pd.concat(map(pd.read_csv, ['E001_EMP_DATA.csv','E012_EMP_DATA.csv']))   
 	if emp_number:
 		data = df1[df1['Employee ID'] == emp_number]
+		search_date = data.Date.unique().tolist()
 		st.write("""#### Check Your Weekly Timesheet allocation here""")
 		st.info("Choose the date below")
-		search_date = data.Date.unique().tolist()
-		
 		choices = st.multiselect(" ",search_date)
 		st.write(data[data.Date.isin(choices)])
 
