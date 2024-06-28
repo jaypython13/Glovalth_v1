@@ -29,7 +29,7 @@ if choice == "Employee Work Management Portal":
 		
 		search_date = data.Date.unique().tolist()
 		search_time = data.ShiftTiming.unique().tolist()
-		choices = st.multiselect(" ",search_date)
+		#choices = st.multiselect(" ",search_date)
 		st.write(data[data.Date.isin(choices)])
 		#choices = st.multiselect(" ",search_time)
 		#st.write(data[data.ShiftTiming.isin(choices)])
