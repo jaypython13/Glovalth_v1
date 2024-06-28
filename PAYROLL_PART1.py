@@ -15,7 +15,7 @@ st.sidebar.image("Glovalth_logo.jpeg", use_column_width=True)
 
 st.title("Glovalth Health Tech Care Limited")
 menu = ["About Us","Employee Work Management Portal", "Employee Attendence Form", "Care Planning for Care Home", "Medication Activity"]
-choice = st.sidebar.selectbox("Menu",menu)
+choice = st.sidebar.selectbox( " ## Menu " ,menu)
 
 
 if choice == "Employee Work Management Portal":
