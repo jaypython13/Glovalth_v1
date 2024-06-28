@@ -1,7 +1,7 @@
 
 import streamlit as st
-import pandas
-import numpy
+import pandas as pd
+import numpy as np
 
 #df1 = pd.read_csv('E001_EMP_DATA.csv',usecols = ['Employee ID','Location', 'Date','Day', 'Shift Timing','Tasks'])
 #df2 = pd.read_csv('E012_EMP_DATA.csv',usecols = ['Employee ID','Location', 'Date','Day', 'Shift Timing','Tasks'])
@@ -17,7 +17,7 @@ choice = st.sidebar.selectbox("Menu",menu)
 if choice == "Employee Work Management Portal":
 	st.title(" Welcome to Glovalth Employee TimeSheet Management system Portal")
 	emp_number = st.text_input(r"$\textsf{\Large Enter your Employee ID here}$")
-	df = pandas.concat(map(pandas.read_csv, ['E001_EMP_DATA.csv','E012_EMP_DATA.csv']))   
+	df = pd.concat(map(pd.read_csv, ['E001_EMP_DATA.csv','E012_EMP_DATA.csv']))   
 	if emp_number:
 		data = df[df['Employee ID'] == emp_number]
 		st.write("""## Check Your Timesheet allocation here""")
