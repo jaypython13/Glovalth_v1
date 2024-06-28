@@ -25,7 +25,7 @@ if choice == "Employee Work Management Portal":
 	if emp_number:
 		data = df[df['Employee ID'] == emp_number]
 		st.write("""## Check Your Timesheet allocation here""")
-        	st.write(data[["Employee ID",'Location','Date','Day','Shift Timing','Tasks']])
+		st.write(data[["Employee ID",'Location','Date','Day','Shift Timing','Tasks']])
     
 	else:
 	   st.write("""##### If you dont know your Employee number or work is not allocated, Please contact your organisation""")
