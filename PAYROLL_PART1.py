@@ -22,10 +22,10 @@ if choice == "Employee Work Management Portal":
 	if emp_number:
 		data = df[df['Employee ID'] == emp_number]
 		st.write("""## Check Your Timesheet allocation here""")
-		regular_search_term =data.Day.unique().tolist()
+		regular_search_term =data.Date.unique().tolist()
 		choices = st.multiselect(" ",regular_search_term)
-		st.write(data[data.Day.isin(choices)])
 		st.write(data[data.Date.isin(choices)])
+		#st.write(data[data.Date.isin(choices)])
 		
 		#st.write(data[["Employee ID",'Location','Date','Day','Shift Timing','Tasks']])
     
