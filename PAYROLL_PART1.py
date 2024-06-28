@@ -23,6 +23,7 @@ if choice == "Employee Work Management Portal":
 	df1 = pd.concat(map(pd.read_csv, ['E001_EMP_DATA.csv','E012_EMP_DATA.csv']))   
 	if emp_number:
 		data = df1[df1['Employee ID'] == emp_number]
+		df = data["Employee ID",'Location','Date','Day','ShiftTime','Tasks']
 		st.write("""#### Check Your Weekly Timesheet allocation here""")
 		
 		#col1, col2 = st.columns(2)
