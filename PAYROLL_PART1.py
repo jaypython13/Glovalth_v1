@@ -24,10 +24,10 @@ if choice == "Employee Work Management Portal":
 		st.write("""## Check Your Timesheet allocation here""")
 		regular_search_term =data.Date.unique().tolist()
 		choices = st.multiselect(" ",regular_search_term)
-		st.write(data[data.Date.isin(choices)])
+		st.write(data[data.Date.isin(choices),usecols = ['Employee ID','Location', 'Date','Day', 'Shift Timing','Tasks'])])
 		#st.write(data[data.Date.isin(choices)])
 		
-		st.write(data[["Employee ID",'Location','Date','Day','Shift Timing','Tasks']])
+		#st.write(data[["Employee ID",'Location','Date','Day','Shift Timing','Tasks']])
     
 	else:
 	   st.write("""##### If you dont know your Employee number or work is not allocated, Please contact your organisation""")
