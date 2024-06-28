@@ -1,4 +1,4 @@
-icat
+
 import streamlit as st
 import pandas as pd
 import numpy as np
@@ -11,7 +11,8 @@ import csv
 
 # Streamlit User Interface part
 st.set_page_config(page_title ="Glovalth", page_icon =":guardsman:", layout ="wide")
-st.image("Glovalth_logo.jpeg", width = 200)
+st.sidebar.image("Glovalth_logo.jpeg", use_column_width=True)
+
 st.title("Glovalth Health Tech Care Limited")
 menu = ["About Us","Employee Work Management Portal", "Employee Attendence Form", "Care Planning for Care Home", "Medication Activity"]
 choice = st.sidebar.selectbox("Menu",menu)
