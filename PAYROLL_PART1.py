@@ -74,8 +74,8 @@ if choice == "Employee Work Management Portal":
 		data = df1[df1['Employee ID'] == emp_number]
 		st.write("""## Check Your Timesheet allocation here""")
 		df=pd.DataFrame(data)
-		show = filters_widgets(df)
-		st.write(show)
+		filters_widgets(df)
+		st.write(df)
 		#regular_search_term = data.Date.unique().tolist()
 		#regular_search_time = data.ShiftTiming.unique().tolist()
 		#choices = st.multiselect(" ",regular_search_term)
