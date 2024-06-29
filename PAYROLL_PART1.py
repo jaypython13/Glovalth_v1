@@ -15,9 +15,7 @@ st.markdown("""
     }
 </style>
 """, unsafe_allow_html=True)
-
-with st.sidebar:
-    "## This is the sidebar"        
+   
 
 # Streamlit User Interface part
 st.set_page_config(page_title ="Glovalth", page_icon =":guardsman:", layout ="wide")
