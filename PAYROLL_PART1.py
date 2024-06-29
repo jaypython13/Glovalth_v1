@@ -25,10 +25,10 @@ with st.sidebar:
 if choice == "Employee Work Management Portal":
 	st.title(" Welcome to Glovalth Employee TimeSheet Management system Portal")
 	emp_number = st.text_input(r"$\textsf{\Large Enter your Employee ID here}$")
-	df1 = pd.concat(map(pd.read_csv, ['E001_EMP_DATA.csv','E012_EMP_DATA.csv']))   
+	df1 = pd.concat(map(pd.read_csv, ['E001_Week_1.csv','E012_Week_2.csv']))   
 	if emp_number:
 		data = df1[df1['Employee ID'] == emp_number]
-		df = data["Employee ID",'Location','Date','Day','ShiftTime','Tasks']
+		df = data["Employee ID",'Location','Date','Day','ShiftTime','Tasktype']
 		st.write("""#### Check Your Weekly Timesheet allocation here""")
 		
 		#col1, col2 = st.columns(2)
