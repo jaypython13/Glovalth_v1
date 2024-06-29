@@ -27,12 +27,12 @@ if choice == "Employee Work Management Portal":
 	df1 = pd.concat(map(pd.read_csv, ['E001_Week_1.csv','E012_Week_2.csv']))   
 	if emp_number:
 		data = df1[df1['EmployeeID'] == emp_number]
-		#df = data["EmployeeID",'Location','Date','Day','ShiftTime','Tasktype']
+		df = pd.DataFrame(data)
 		st.write("""#### Check Your Weekly Timesheet allocation here""")
-		dynamic_filters = DynamicFilters(data, filters=['Date', 'ShiftTime', 'Tasktype'])
+		dynamic_filters = DynamicFilters(df, filters=['Date', 'ShiftTime', 'Tasktype'])
 		st.write("Filter your work here 👇")
 		dynamic_filters.display_filters(location='columns', num_columns=2, gap='large')
-		dynamic_filters.display_data()
+		dynamic_filters.display_df()
 
 		#col1, col2 = st.columns(2)
 		#date_selection = col1.multiselect('select Date ', data.Date.unique().tolist(), key='date')
