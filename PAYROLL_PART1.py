@@ -12,7 +12,7 @@ from streamlit_dynamic_filters import DynamicFilters
 st.set_page_config(page_title ="Glovalth", page_icon =":guardsman:", layout ="wide")
 st.sidebar.image("Glovalth_logo.jpeg", width =200)
 
-st.title(" Sathish thangam I love you")
+st.title("Glovalth Health Tech Limited")
 with st.sidebar:
     choice = option_menu("Main Menu", ["Home", "Employee Work Management Portal", "Employee Attendence Form", "Care Planning for Care Home", "Medication Activity", "Document Verification for Care Home", "Emergency", ], 
         icons=['house', 'list-task', 'cloud-upload', 'list-task', 'list-task','list-task'], menu_icon="cast", default_index=1)
@@ -22,7 +22,7 @@ with st.sidebar:
 
 
 if choice == "Employee Work Management Portal":
-	st.title(" Welcome to Glovalth Employee TimeSheet Management system Portal")
+	st.title(" Welcome to Glovalth Employee Portal")
 	emp_number = st.text_input(r"$\textsf{\Large Enter your Employee ID here}$")
 	df1 = pd.concat(map(pd.read_csv, ['E001_Week_1.csv','E012_Week_2.csv']))   
 	if emp_number:
