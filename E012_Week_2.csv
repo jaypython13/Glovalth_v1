@@ -1,0 +1,54 @@
+﻿EmployeeID,Date,ShiftTime,TaskType,Tasks,TaskNotes,PatientLocation
+E012,10/06/2024,08:00-09:00,Medical,Medication Administration,Ensure that the patient takes prescribed oral medications as directed by their healthcare provider.Help the patient use inhalers and nebulizers to manage respiratory conditions.,"Room 101, Cedar Grove Nursing Home, 444 Cedar Grove Road, Leicester, LE7 7GG"
+E012,10/06/2024,09:00-10:00,Non-Medical,Assist with meal preparation,Prepare a Vegan Meal without Onion: Ensure meals are nutritious and cater to dietary preferences.,"Room 116, Cedar Grove Nursing Home, 444 Cedar Grove Road, Leicester, LE7 7GG"
+E012,10/06/2024,10:00-10:30,Medical,Vital Signs Monitoring,Regularly check the patient's blood pressure. Measure and record the patient's heart rate.,"Room 267, Cedar Grove Nursing Home, 444 Cedar Grove Road, Leicester, LE7 7GG"
+E012,10/06/2024,10:30-13:00,Non-Medical,Transportation and Errands,Ensure patient attends all scheduled medical appointments safely.  Collect medications from the pharmacy as needed.,"Room 67, Cedar Grove Nursing Home, 444 Cedar Grove Road, Leicester, LE7 7GG"
+E012,10/06/2024,13:00-13.30,Break,Break,Break,Own Location
+E012,10/06/2024,13:30-14:00,Non-Medical,Housekeeping,Assist with cleaning and tidying the patient’s living space.,"444 Willow Way, Leicester, LE7 7GG"
+E012,10/06/2024,14:00-15:00,Medical,Wound Care,"Clean and dress wounds according to medical guidelines.Monitor for any signs of infection, such as redness, swelling, or unusual discharge. Ensure proper hygiene during wound care to prevent infection. Document any changes in wound appearance or patient discomfort for healthcare provider review.","444 Willow Way, Leicester, LE7 7GG"
+E012,10/06/2024,15:00-16:00,Non-Medical,Assist with meals,"Collaborate with the patient to plan meals that align with their preferences and dietary guidelines, promoting overall health and well-being","444 Willow Way, Leicester, LE7 7GG"
+E012,11/06/2024,10:00-11:00,Medical,Medication Administration,Help the patient use inhalers and nebulizers to manage respiratory conditions.,"123 Oak Street, Leicester, LE1 1AA"
+E012,11/06/2024,12:00-13:00,Medical,Assistance with Medical Devices,"Assist the patient in using mobility aids such as walkers or wheelchairs.
+Ensure the aids are properly adjusted and positioned for safe use.","123 Oak Street, Leicester, LE1 1AA"
+E012,11/06/2024,13:00-13.30,Break,Break,Break,Own Location
+E012,11/06/2024,13:30-14:00,Non-Medical,Mobility Assistance,"Helping with walking or transfers.
+Supporting exercise routines.
+Assisting with stretching.","123 Oak Street, Leicester, LE1 1AA"
+E012,11/06/2024,14:00-15:00,Medical,Personal Care with Medical Focus,"Assisting with toileting needs and hygiene.
+Encouraging adherence to fluid intake recommendations.
+Keeping track of urinary patterns and reporting changes as necessary.","123 Care Home St, LE1 1AA, Leicester"
+E012,11/06/2024,15:00-16:00,Non-Medical,Emotional Support,Supporting mental well-being.Listening to concerns.Providing reassurance.,"123 Care Home St, LE1 1AA, Leicester"
+E012,12/06/2024,08:00-09:00,Non-Medical,Personal hygiene,Bathing and showering assistance.,"	321 Domiciliary Lane, LE4 5AD, Leicester"
+E012,12/06/2024,09:00-10:00,Non-Medical,Assist with meals,"Provide hands-on assistance during meal times as needed, ensuring comfort and proper nutrition intake.Ensure medications are administered according to the prescribed schedule.
+Verify the correct dosage and medication type before administration.Monitor for any adverse reactions or changes in the patient's condition post-administration.","	321 Domiciliary Lane, LE4 5AD, Leicester"
+E012,12/06/2024,10:00-11:00,Medical,Medication Administration,The patient requires assistance with administering oral medications due to physical limitations or cognitive impairment.,"	321 Domiciliary Lane, LE4 5AD, Leicester"
+E012,12/06/2024,12:00-13:00,Medical,Vital Signs Monitoring,"Measuring heart rate at specified intervals.
+Monitoring blood glucose levels as instructed.
+Recording and reporting any significant changes.","	321 Domiciliary Lane, LE4 5AD, Leicester"
+E012,12/06/2024,13:00-13.30,Break,Break,Break,Own Location
+E012,12/06/2024,13:30-14:00,Non-Medical,Personal hygiene,"Providing care for hair and nails, ensuring comfort and cleanliness.","Room 44, Pine Tree Care Home, 101 Pine Tree Avenue, Leicester, LE4 4DD"
+E012,12/06/2024,14:00-15:00,Medical,Vital Signs Monitoring,"Monitoring blood glucose levels as instructed.
+Recording and reporting any significant changes.","Room 99, Pine Tree Care Home, 101 Pine Tree Avenue, Leicester, LE4 4DD"
+E012,13/06/2024,08:00-09:00,Medical,Medication Administration,Apply prescribed creams or ointments to the patient's skin as part of their treatment plan.,"Room 456, Sunrise Senior Living, 456 Sunrise Road, Leicester, LE2 2BB"
+E012,13/06/2024,09:00-10:00,Medical,Wound Care,Cleaning and dressing wounds.,"Room 456, Sunrise Senior Living, 456 Sunrise Road, Leicester, LE2 2BB"
+E012,13/06/2024,10:00-11:00,Medical,Check vitals,"Monitoring blood glucose levels as instructed.
+Recording and reporting any significant changes.","Room 87, Sunrise Senior Living, 456 Sunrise Road, Leicester, LE2 2BB"
+E012,13/06/2024,12:00-13:00,Non-Medical,Emotional Support,Encouraging social interaction through conversations and accompanying patients on walks or outings.,"Room 32, Sunrise Senior Living, 456 Sunrise Road, Leicester, LE2 2BB"
+E012,13/06/2024,13:00-13.30,Break,Break,Break,Own Location
+E012,13/06/2024,13:30-14:00,Non-Medical,Mobility support,Supporting the patient's exercise regimen and providing assistance with stretching exercises.,"Room 142, Sunrise Senior Living, 456 Sunrise Road, Leicester, LE2 2BB"
+E012,13/06/2024,14:00-15:00,Non-Medical,Housekeeping,"Assist the patient with laundering, ironing, and neatly folding clothes.","Room 105, Sunrise Senior Living, 456 Sunrise Road, Leicester, LE2 2BB"
+E012,13/06/2024,15:00-16:00,Medical,Personal Care with Medical Focus,"Providing support in maintaining and cleaning catheters.
+Ensuring proper positioning and comfort.
+Monitoring for any signs of discomfort or infection.","Room 66, Sunrise Senior Living, 456 Sunrise Road, Leicester, LE2 2BB"
+E012,14/06/2024,08:00-09:00,Medical,Assistance with Medical Devices,"Assist the patient in using mobility aids such as walkers, canes, or wheelchairs as prescribed by healthcare providers.
+Ensure mobility aids are positioned correctly and securely for safe use.","Room 75, Cherry Blossom Residential Home, 333 Cherry Blossom Street, Leicester, LE15 5OO"
+E012,14/06/2024,09:00-10:00,Medical,Transportation and Errands,Support the patient in procuring groceries and essential household items.,"Room 66, Cherry Blossom Residential Home, 333 Cherry Blossom Street, Leicester, LE15 5OO"
+E012,14/06/2024,10:00-11:00,Medical,Vital Signs Monitoring,"Checking blood pressure, Measuring heart rate, Monitoring blood glucose levels.","Room 88, Cherry Blossom Residential Home, 333 Cherry Blossom Street, Leicester, LE15 5OO"
+E012,14/06/2024,12:00-12:30,Break,Break,Break,Own Location
+E012,14/06/2024,13:00-13.30,Non-Medical,Housekeeping,Regularly change and freshen bed linens for the patient’s comfort.,"333 Birchbrook Road, Leicester, LE15 5OO"
+E012,14/06/2024,13:30-14:00,Medical,Vital Signs Monitoring,"Monitoring blood glucose levels as instructed.
+Recording and reporting any significant changes.Help the patient with oxygen equipment setup and adjustments.
+Monitor oxygen levels as directed and report any concerns promptly.","333 Birchbrook Road, Leicester, LE15 5OO"
+E012,14/06/2024,14:00-15:00,Medical,Assistance with Medical Devices,"Assist the patient in using mobility aids such as walkers or wheelchairs.
+Ensure the aids are properly adjusted and positioned for safe use.","333 Birchbrook Road, Leicester, LE15 5OO"
+E012,14/06/2024,15:00-16:00,Non-Medical,Mobility support,Encourage and assist the patient in performing prescribed exercise routines to promote physical mobility and strength. Ensure exercises are conducted safely and in accordance with the patient's capabilities and medical recommendations.,"333 Birchbrook Road, Leicester, LE15 5OO"
