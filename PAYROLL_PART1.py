@@ -8,10 +8,6 @@ from streamlit_dynamic_filters import DynamicFilters
 #df1 = pd.read_csv('E001_EMP_DATA.csv',usecols = ['Employee ID','Location', 'Date','Day', 'Shift Timing','Tasks'])
 #df2 = pd.read_csv('E012_EMP_DATA.csv',usecols = ['Employee ID','Location', 'Date','Day', 'Shift Timing','Tasks'])
 
-
-
-   
-
 # Streamlit User Interface part
 st.set_page_config(page_title ="Glovalth", page_icon =":guardsman:", layout ="wide")
 st.sidebar.image("Glovalth_logo.jpeg", width =200)
@@ -36,7 +32,7 @@ if choice == "Employee Work Management Portal":
 		dynamic_filters = DynamicFilters(data, filters=['Date', 'ShiftTime', 'Tasktype'])
 		st.write("Filter your work here 👇")
 		dynamic_filters.display_filters(location='columns', num_columns=2, gap='large')
-		dynamic_filters.display_df()
+		dynamic_filters.display_data()
 
 		#col1, col2 = st.columns(2)
 		#date_selection = col1.multiselect('select Date ', data.Date.unique().tolist(), key='date')
