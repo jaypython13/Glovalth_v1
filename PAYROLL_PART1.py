@@ -17,7 +17,7 @@ st.title("Glovalth Health Tech Care Limited")
 with st.sidebar:
     choice = option_menu("Main Menu", ["Home", "Employee Work Management Portal", "Employee Attendence Form", "Care Planning for Care Home", "Medication Activity"], 
         icons=['house', 'list-task', 'cloud-upload', 'list-task', 'list-task'], menu_icon="cast", default_index=1)
-    choice
+
 #menu = ["About Us","Employee Work Management Portal", "Employee Attendence Form", "Care Planning for Care Home", "Medication Activity"]
 #choice = st.sidebar.selectbox( " ## Menu " ,menu)
 
