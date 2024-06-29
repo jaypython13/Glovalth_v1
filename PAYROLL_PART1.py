@@ -11,7 +11,7 @@ from streamlit_option_menu import option_menu
 
 # Streamlit User Interface part
 st.set_page_config(page_title ="Glovalth", page_icon =":guardsman:", layout ="wide")
-st.sidebar.image("Glovalth_logo.jpeg", use_column_width=True)
+st.sidebar.image("Glovalth_logo.jpeg")
 
 st.title("Glovalth Health Tech Care Limited")
 with st.sidebar:
