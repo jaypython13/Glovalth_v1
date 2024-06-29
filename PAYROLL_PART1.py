@@ -14,8 +14,12 @@ st.set_page_config(page_title ="Glovalth", page_icon =":guardsman:", layout ="wi
 st.sidebar.image("Glovalth_logo.jpeg", use_column_width=True)
 
 st.title("Glovalth Health Tech Care Limited")
-menu = ["About Us","Employee Work Management Portal", "Employee Attendence Form", "Care Planning for Care Home", "Medication Activity"]
-choice = st.sidebar.selectbox( " ## Menu " ,menu)
+with st.sidebar:
+    choice = option_menu("Main Menu", ["Home", "Employee Work Management Portal", "Employee Attendence Form", "Care Planning for Care Home", "Medication Activity"], 
+        icons=['house', 'gear'], menu_icon="cast", default_index=1)
+    choice
+#menu = ["About Us","Employee Work Management Portal", "Employee Attendence Form", "Care Planning for Care Home", "Medication Activity"]
+#choice = st.sidebar.selectbox( " ## Menu " ,menu)
 
 
 if choice == "Employee Work Management Portal":
