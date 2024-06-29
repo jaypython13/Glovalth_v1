@@ -16,7 +16,7 @@ from streamlit_dynamic_filters import DynamicFilters
 st.set_page_config(page_title ="Glovalth", page_icon =":guardsman:", layout ="wide")
 st.sidebar.image("Glovalth_logo.jpeg", width =200)
 
-st.title("Glovalth Health Tech Care Limited")
+st.title(" Glovalth Health Tech Care Limited")
 with st.sidebar:
     choice = option_menu("Main Menu", ["Home", "Employee Work Management Portal", "Employee Attendence Form", "Care Planning for Care Home", "Medication Activity", "Document Verification for Care Home", "Emergency", ], 
         icons=['house', 'list-task', 'cloud-upload', 'list-task', 'list-task','list-task'], menu_icon="cast", default_index=1)
@@ -33,19 +33,23 @@ if choice == "Employee Work Management Portal":
 		data = df1[df1['EmployeeID'] == emp_number]
 		#df = data["EmployeeID",'Location','Date','Day','ShiftTime','Tasktype']
 		st.write("""#### Check Your Weekly Timesheet allocation here""")
-		
+		dynamic_filters = DynamicFilters(data, filters=['Date', 'ShiftTime', 'Tasktype'])
+		st.write("Filter your work here 👇")
+		dynamic_filters.display_filters(location='columns', num_columns=2, gap='large')
+		dynamic_filters.display_df()
+
 		#col1, col2 = st.columns(2)
 		#date_selection = col1.multiselect('select Date ', data.Date.unique().tolist(), key='date')
 		#time_selection = col2.multiselect('select ShiftTime ', data.ShiftTime.unique().tolist(), key='time')
 		#st.write(data.date)unique.tolist())
 		#st.write(data[data.Date.isin(choices)])
-		search_date = data.Date.unique().tolist()
+		#search_date = data.Date.unique().tolist()
 		
-		st.info("Choose the date below")
-		choices = st.multiselect(" ",search_date)
+		#st.info("Choose the date below")
+		#choices = st.multiselect(" ",search_date)
 		#search_time = data.ShiftTime.unique().tolist()
 		#choices = st.multiselect(" ",search_time)
-		st.write(data[data.Date.isin(choices)])
+		#st.write(data[data.Date.isin(choices)])
 		
 		#st.write(data[["Employee ID",'Location','Date','Day','Shift Timing','Tasks']])
     
