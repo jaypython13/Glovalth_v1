@@ -16,7 +16,7 @@ st.sidebar.image("Glovalth_logo.jpeg", use_column_width=True)
 st.title("Glovalth Health Tech Care Limited")
 with st.sidebar:
     choice = option_menu("Main Menu", ["Home", "Employee Work Management Portal", "Employee Attendence Form", "Care Planning for Care Home", "Medication Activity"], 
-        icons=['house', 'gear'], menu_icon="cast", default_index=1)
+        icons=['house', 'list-task', 'cloud-upload', 'list-task', 'list-task'], menu_icon="cast", default_index=1)
     choice
 #menu = ["About Us","Employee Work Management Portal", "Employee Attendence Form", "Care Planning for Care Home", "Medication Activity"]
 #choice = st.sidebar.selectbox( " ## Menu " ,menu)
@@ -49,7 +49,7 @@ if choice == "Employee Work Management Portal":
 	else:
 	   st.write("""##### If you dont know your Employee number or work is not allocated, Please contact your organisation""")
                 
-if choice == "About Us":
+if choice == "Home":
 	st.subheader ("Our Base")
 	st.info(""" #### Proudly serving the UK’s care homes from our Leicester headquarters. We specialize in timesheet management solutions tailored for the care industry. Our tools simplify payroll, boost productivity, and ensure compliance. Partner with us for efficient and reliable staff management.""")
 	st.subheader("What We Do")
