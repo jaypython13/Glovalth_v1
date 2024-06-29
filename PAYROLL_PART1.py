@@ -28,7 +28,7 @@ if choice == "Employee Work Management Portal":
 	if emp_number:
 		data = df1[df1['EmployeeID'] == emp_number]
 		df = pd.DataFrame(data)
-		st.write("""#### Check this week Work allocation here 👇 """)
+		st.write("""#### Check your work allocation for this week here 👇 """)
 		dynamic_filters = DynamicFilters(df, filters=['Date', 'ShiftTime', 'TaskType'])
 		#st.write("Find your assigned work here 👇")
 		dynamic_filters.display_filters(location='columns', num_columns=3, gap='medium')
