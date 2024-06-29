@@ -8,13 +8,7 @@ from streamlit_option_menu import option_menu
 #df2 = pd.read_csv('E012_EMP_DATA.csv',usecols = ['Employee ID','Location', 'Date','Day', 'Shift Timing','Tasks'])
 
 
-st.markdown("""
-<style>
-    [data-testid=stSidebar] {
-        background-color: #ff000050;
-    }
-</style>
-""", unsafe_allow_html=True)
+
    
 
 # Streamlit User Interface part
@@ -23,6 +17,13 @@ st.sidebar.image("Glovalth_logo.jpeg", width =200)
 
 st.title("Glovalth Health Tech Care Limited")
 with st.sidebar:
+	st.markdown("""
+<style>
+    [data-testid=stSidebar] {
+        background-color: #ff000050;
+    }
+</style>
+""", unsafe_allow_html=True)
     choice = option_menu("Main Menu", ["Home", "Employee Work Management Portal", "Employee Attendence Form", "Care Planning for Care Home", "Medication Activity", "Document Verification for Care Home", "Emergency", ], 
         icons=['house', 'list-task', 'cloud-upload', 'list-task', 'list-task','list-task'], menu_icon="cast", default_index=1)
 
