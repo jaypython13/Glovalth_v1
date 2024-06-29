@@ -15,8 +15,8 @@ st.sidebar.image("Glovalth_logo.jpeg", width =200)
 
 st.title("Glovalth Health Tech Care Limited")
 with st.sidebar:
-    choice = option_menu("Main Menu", ["Home", "Employee Work Management Portal", "Employee Attendence Form", "Care Planning for Care Home", "Medication Activity"], 
-        icons=['house', 'list-task', 'cloud-upload', 'list-task', 'list-task'], menu_icon="cast", default_index=1)
+    choice = option_menu("Main Menu", ["Home", "Employee Work Management Portal", "Employee Attendence Form", "Care Planning for Care Home", "Medication Activity", "Document Verification for Care Home", "Emergency", ], 
+        icons=['house', 'list-task', 'cloud-upload', 'list-task', 'list-task','list-task'], menu_icon="cast", default_index=1)
 
 #menu = ["About Us","Employee Work Management Portal", "Employee Attendence Form", "Care Planning for Care Home", "Medication Activity"]
 #choice = st.sidebar.selectbox( " ## Menu " ,menu)
@@ -28,7 +28,7 @@ if choice == "Employee Work Management Portal":
 	df1 = pd.concat(map(pd.read_csv, ['E001_Week_1.csv','E012_Week_2.csv']))   
 	if emp_number:
 		data = df1[df1['EmployeeID'] == emp_number]
-		df = data["EmployeeID",'Location','Date','Day','ShiftTime','Tasktype']
+		#df = data["EmployeeID",'Location','Date','Day','ShiftTime','Tasktype']
 		st.write("""#### Check Your Weekly Timesheet allocation here""")
 		
 		#col1, col2 = st.columns(2)
