@@ -50,7 +50,7 @@ if choice == "Employee Work Management Portal":
 	   st.write("""##### If you dont know your Employee number or work is not allocated, Please contact your organisation""")
                 
 if choice == "Home":
-	st.subheader ("Our Base")
+	st.subheader ("Who we are")
 	st.info(""" #### Proudly serving the UK’s care homes from our Leicester headquarters. We specialize in timesheet management solutions tailored for the care industry. Our tools simplify payroll, boost productivity, and ensure compliance. Partner with us for efficient and reliable staff management.""")
 	st.subheader("What We Do")
 	st.info(""" #### Our Business team ensures smooth and efficient operations, supporting every aspect of our business. From handling client inquiries to managing internal processes, they are the backbone of our organization. Their dedication to excellence and attention to detail guarantee high-quality service and operational integrity. Our primary objective is to develop comprehensive and standardized HR software applications tailored specifically for UK industries. We aim to provide solutions that streamline human resource management, enhance operational efficiency, and support the unique needs of businesses across various sectors in the UK. By leveraging advanced technology and industry best practices, we strive to deliver user-friendly and adaptable software that meets the evolving demands of the modern workforce.""")
