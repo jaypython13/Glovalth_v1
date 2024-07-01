@@ -10,7 +10,7 @@ from streamlit_dynamic_filters import DynamicFilters
 
 # Streamlit User Interface part
 st.set_page_config(page_title ="Glovalth", page_icon =":guardsman:", layout ="wide")
-st.sidebar.image("Glovalth_logo.jpeg", width =200)
+st.image("Glovalth_logo.jpeg", width =200)
 
 #with st.sidebar:
 	#choice1 = option_menu("Main Menu", ["Home", "Employee Work Management Portal", "Employee Attendence Form", "Care Planning for Care Home", "Medication Activity", "Document Verification for Care Home", "Emergency", ], 
