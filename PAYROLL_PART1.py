@@ -13,7 +13,7 @@ st.set_page_config(page_title ="Glovalth", page_icon =":guardsman:", layout ="wi
 st.sidebar.image("Glovalth_logo.jpeg", width =200)
 
 with st.sidebar:
-	choice = option_menu("Main Menu", ["Home", "Employee Work Management Portal", "Employee Attendence Form", "Care Planning for Care Home", "Medication Activity", "Document Verification for Care Home", "Emergency", ], 
+	choice1 = option_menu("Main Menu", ["Home", "Employee Work Management Portal", "Employee Attendence Form", "Care Planning for Care Home", "Medication Activity", "Document Verification for Care Home", "Emergency", ], 
         icons=['house', 'list-task', 'cloud-upload', 'list-task', 'list-task','list-task'], menu_icon="cast", default_index=0)
 
 choice = option_menu("Main Menu", ["Home", "Employee Work Management Portal", "Employee Attendence Form", "Care Planning for Care Home", "Medication Activity", "Document Verification for Care Home", "Emergency", ], 
@@ -28,7 +28,7 @@ choice = option_menu("Main Menu", ["Home", "Employee Work Management Portal", "E
 #choice = st.sidebar.selectbox( " ## Menu " ,menu)
 
 
-if choice == "Employee Work Management Portal":
+if choice, choice1 == "Employee Work Management Portal":
 	st.title(" Welcome to Glovalth Employee Portal")
 	emp_number = st.text_input(r"$\textsf{\Large Enter your Employee ID here}$")
 	df1 = pd.concat(map(pd.read_csv, ['E001_Week_1.csv','E012_Week_2.csv']))   
