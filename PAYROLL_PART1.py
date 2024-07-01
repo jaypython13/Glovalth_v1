@@ -20,7 +20,7 @@ choice = option_menu("Main Menu", ["Home", "Employee Work Management Portal", "E
         icons=['house', 'list-task', 'cloud-upload', 'list-task', 'list-task','list-task'], menu_icon="cast",default_index=1, orientation="horizontal", styles={
         "container": {"padding": "0!important", "background-color": "#000000"},
         "icon": {"color": "orange", "font-size": "20px"}, 
-        "nav-link": {"font-size": "20px", "text-align": "left", "margin":"0px", "--hover-color": "#000000"},
+        "nav-link": {"font-size": "20px", "text-align": "center", "margin":"0px", "--hover-color": "#000000"},
         "nav-link-selected": {"background-color": "green"},
     })
 
@@ -28,7 +28,7 @@ choice = option_menu("Main Menu", ["Home", "Employee Work Management Portal", "E
 #choice = st.sidebar.selectbox( " ## Menu " ,menu)
 
 
-if choice or choice1 == "Employee Work Management Portal":
+if choice and choice1 == "Employee Work Management Portal":
 	st.title(" Welcome to Glovalth Employee Portal")
 	emp_number = st.text_input(r"$\textsf{\Large Enter your Employee ID here}$")
 	df1 = pd.concat(map(pd.read_csv, ['E001_Week_1.csv','E012_Week_2.csv']))   
