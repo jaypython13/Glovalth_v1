@@ -10,7 +10,7 @@ from streamlit_dynamic_filters import DynamicFilters
 
 # Streamlit User Interface part
 st.set_page_config(page_title ="Glovalth", page_icon =":guardsman:", layout ="wide")
-col1, mid, col2 = st.beta_columns([1,1,20])
+col1, col2 = st.beta_columns([1,1,20])
 with col1:
     st.image('Glovalth_logo.jpeg', width=60)
 with col2:
