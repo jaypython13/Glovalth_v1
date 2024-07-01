@@ -55,7 +55,7 @@ st.markdown(
         #icons=['house', 'list-task', 'cloud-upload', 'list-task', 'list-task','list-task'], menu_icon="cast", default_index=0)
 
 choice = option_menu("Menu", ["Home", "Employee Work Management Portal", "Task Completion Form", "Care Planning for Care Home", "Document Management Portal", "Document Sync","Medication Activity","Emergency", "Document Sync"], 
-        icons=['house', 'list-task', 'cloud-upload', 'list-task', 'list-task','list-task'], menu_icon="cast",default_index=1, orientation="horizontal", 
+        icons=['house','', 'cloud-upload'], menu_icon="cast",default_index=1, orientation="horizontal", 
 styles={
         "container": {"padding": "0!important" },
         "icon": {"color": "orange", "font-size": "20px"}, 
