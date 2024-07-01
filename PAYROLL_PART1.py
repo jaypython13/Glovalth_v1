@@ -6,11 +6,13 @@ import csv
 from streamlit_option_menu import option_menu
 from streamlit_dynamic_filters import DynamicFilters
 import base64
+
 #df1 = pd.read_csv('E001_EMP_DATA.csv',usecols = ['Employee ID','Location', 'Date','Day', 'Shift Timing','Tasks'])
 #df2 = pd.read_csv('E012_EMP_DATA.csv',usecols = ['Employee ID','Location', 'Date','Day', 'Shift Timing','Tasks'])
 
 # Streamlit User Interface part
 st.set_page_config(page_title ="Glovalth", page_icon =":guardsman:", backgroundColor="#FFFFFF")
+backgroundColor="#FFFFFF"
 LOGO_IMAGE = "Glovalth_logo.jpeg"
 
 st.markdown(
