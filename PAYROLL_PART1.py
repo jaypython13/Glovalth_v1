@@ -12,7 +12,9 @@ from streamlit_dynamic_filters import DynamicFilters
 st.set_page_config(page_title ="Glovalth", page_icon =":guardsman:", layout ="wide")
 st.sidebar.image("Glovalth_logo.jpeg", width =200)
 
-
+with st.sidebar:
+choice = option_menu("Main Menu", ["Home", "Employee Work Management Portal", "Employee Attendence Form", "Care Planning for Care Home", "Medication Activity", "Document Verification for Care Home", "Emergency", ], 
+        icons=['house', 'list-task', 'cloud-upload', 'list-task', 'list-task','list-task'], menu_icon="cast",default_index=1, orientation="horizontal")
 #with st.sidebar:
 choice = option_menu("Main Menu", ["Home", "Employee Work Management Portal", "Employee Attendence Form", "Care Planning for Care Home", "Medication Activity", "Document Verification for Care Home", "Emergency", ], 
         icons=['house', 'list-task', 'cloud-upload', 'list-task', 'list-task','list-task'], menu_icon="cast",default_index=1, orientation="horizontal", styles={
