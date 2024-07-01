@@ -20,7 +20,7 @@ choice = option_menu("Main Menu", ["Home", "Employee Work Management Portal", "E
         icons=['house', 'list-task', 'cloud-upload', 'list-task', 'list-task','list-task'], menu_icon="cast",default_index=1, orientation="horizontal", styles={
         "container": {"padding": "0!important", "background-color": "#4169e1"},
         "icon": {"color": "orange", "font-size": "25px"}, 
-        "nav-link": {"font-size": "25px", "text-align": "left", "margin":"0px", "--hover-color": "#eee"},
+        "nav-link": {"font-size": "25px", "text-align": "left", "margin":"0px", "--hover-color": "#000000"},
         "nav-link-selected": {"background-color": "green"},
     })
 
