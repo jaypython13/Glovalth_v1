@@ -11,7 +11,7 @@ import base64
 #df2 = pd.read_csv('E012_EMP_DATA.csv',usecols = ['Employee ID','Location', 'Date','Day', 'Shift Timing','Tasks'])
 
 # Streamlit User Interface part
-st.set_page_config(page_title ="Glovalth", page_icon =":guardsman:", backgroundColor="#FFFFFF")
+st.set_page_config(page_title ="Glovalth", page_icon =":guardsman:")
 backgroundColor="#FFFFFF"
 LOGO_IMAGE = "Glovalth_logo.jpeg"
 
