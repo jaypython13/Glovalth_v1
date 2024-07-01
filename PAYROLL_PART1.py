@@ -14,12 +14,12 @@ st.sidebar.image("Glovalth_logo.jpeg", width =200)
 
 with st.sidebar:
 	choice = option_menu("Main Menu", ["Home", "Employee Work Management Portal", "Employee Attendence Form", "Care Planning for Care Home", "Medication Activity", "Document Verification for Care Home", "Emergency", ], 
-        icons=['house', 'list-task', 'cloud-upload', 'list-task', 'list-task','list-task'], menu_icon="cast",default_index=0)
-#with st.sidebar:
+        icons=['house', 'list-task', 'cloud-upload', 'list-task', 'list-task','list-task'], menu_icon="cast", default_index=0)
+
 choice = option_menu("Main Menu", ["Home", "Employee Work Management Portal", "Employee Attendence Form", "Care Planning for Care Home", "Medication Activity", "Document Verification for Care Home", "Emergency", ], 
         icons=['house', 'list-task', 'cloud-upload', 'list-task', 'list-task','list-task'], menu_icon="cast",default_index=1, orientation="horizontal", styles={
         "container": {"padding": "0!important", "background-color": "#000000"},
-        "icon": {"color": "orange", "font-size": "25px"}, 
+        "icon": {"color": "orange", "font-size": "20px"}, 
         "nav-link": {"font-size": "20px", "text-align": "left", "margin":"0px", "--hover-color": "#000000"},
         "nav-link-selected": {"background-color": "green"},
     })
