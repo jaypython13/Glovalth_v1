@@ -28,7 +28,7 @@ choice = option_menu("Main Menu", ["Home", "Employee Work Management Portal", "E
 #choice = st.sidebar.selectbox( " ## Menu " ,menu)
 
 
-if choice and choice1 == "Employee Work Management Portal":
+if choice1 == "Employee Work Management Portal":
 	st.title(" Welcome to Glovalth Employee Portal")
 	emp_number = st.text_input(r"$\textsf{\Large Enter your Employee ID here}$")
 	df1 = pd.concat(map(pd.read_csv, ['E001_Week_1.csv','E012_Week_2.csv']))   
