@@ -50,18 +50,18 @@ st.markdown(
 
 #st.image("Glovalth_logo.jpeg", width =200)
 
-#with st.sidebar:
+with st.sidebar:
 	#choice1 = option_menu("Main Menu", ["Home", "Employee Work Management Portal", "Employee Attendence Form", "Care Planning for Care Home", "Medication Activity", "Document Verification for Care Home", "Emergency", ], 
         #icons=['house', 'list-task', 'cloud-upload', 'list-task', 'list-task','list-task'], menu_icon="cast", default_index=0)
 
-choice = option_menu("Menu", ["Home", "Employee Work Management Portal", "Task Completion Form", "Care Planning for Care Home", "Document Management Portal", "Document Sync","Medication Activity","Emergency"], 
+	choice = option_menu("Menu", ["Home", "Employee Work Management Portal", "Task Completion Form", "Care Planning for Care Home", "Document Management Portal", "Document Sync","Medication Activity","Emergency"], 
         icons=['house'], menu_icon="cast",default_index=1, orientation="horizontal", 
-styles={
+	styles={
         "container": {"padding": "0!important" },
         "icon": {"color": "orange", "font-size": "20px"}, 
         "nav-link": {"font-size": "20px", "text-align": "center", "margin":"0px", "--hover-color":  "#000000"},
         "nav-link-selected": {"background-color": "green"},
-    })
+    	})
 
 #menu = ["About Us","Employee Work Management Portal", "Employee Attendence Form", "Care Planning for Care Home", "Medication Activity"]
 #choice = st.sidebar.selectbox( " ## Menu " ,menu)
