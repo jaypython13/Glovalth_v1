@@ -37,7 +37,7 @@ st.markdown(
     f"""
     <div class="container">
         <img class="logo-img" src="data:image/png;base64,{base64.b64encode(open(LOGO_IMAGE, "rb").read()).decode()}">
-        <p class="logo-text">Logo Much ?</p>
+        <p class="logo-text">Glovalth Health Tech Care Limited</p>
     </div>
     """,
     unsafe_allow_html=True
