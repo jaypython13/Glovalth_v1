@@ -12,6 +12,8 @@ import base64
 
 # Streamlit User Interface part
 st.set_page_config(page_title ="Glovalth", page_icon =":guardsman:")
+[theme]
+primaryColor="#FF4B4B"
 backgroundColor="#FFFFFF"
 LOGO_IMAGE = "Glovalth_logo.jpeg"
 
