@@ -5,16 +5,44 @@ import numpy as np
 import csv
 from streamlit_option_menu import option_menu
 from streamlit_dynamic_filters import DynamicFilters
+import base64
 #df1 = pd.read_csv('E001_EMP_DATA.csv',usecols = ['Employee ID','Location', 'Date','Day', 'Shift Timing','Tasks'])
 #df2 = pd.read_csv('E012_EMP_DATA.csv',usecols = ['Employee ID','Location', 'Date','Day', 'Shift Timing','Tasks'])
 
 # Streamlit User Interface part
 st.set_page_config(page_title ="Glovalth", page_icon =":guardsman:", layout ="wide")
-col1, col2 = st.beta_columns([1,1,20])
-with col1:
-    st.image('Glovalth_logo.jpeg', width=60)
-with col2:
-    st.write('Glovalth Health Tech Care Limited')
+LOGO_IMAGE = "Glovalth_logo.jpeg"
+
+st.markdown(
+    """
+    <style>
+    .container {
+        display: flex;
+    }
+    .logo-text {
+        font-weight:700 !important;
+        font-size:50px !important;
+        color: #f9a01b !important;
+        padding-top: 75px !important;
+    }
+    .logo-img {
+        float:right;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
+st.markdown(
+    f"""
+    <div class="container">
+        <img class="logo-img" src="data:image/png;base64,{base64.b64encode(open(LOGO_IMAGE, "rb").read()).decode()}">
+        <p class="logo-text">Logo Much ?</p>
+    </div>
+    """,
+    unsafe_allow_html=True
+)
+
 
 #st.image("Glovalth_logo.jpeg", width =200)
 
