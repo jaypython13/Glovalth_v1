@@ -36,7 +36,7 @@ choice = option_menu("Menu", ["Home", "Login/Sign Up", "Employee Work Management
 
 if choice == "Task Completion Form":
 	st.title("Task Completion Form")
-	st.warning("⚠️ Both the caregiver and the patient/client are required to sign this form.")
+	
 	st.subheader("Enter your Task details here 👇")
 	with st.form("form1", clear_on_submit = True):
 		
@@ -58,7 +58,7 @@ if choice == "Task Completion Form":
 		empsign, patientsign = st.columns(2, vertical_alignment="bottom")
 		empsign.info("Employee Signature✍️ ")
 		patientsign.info( "Patient Signature ✍️")
-		
+		st.warning("⚠️ Both the caregiver and the patient/client are required to sign this form.")
 		#time_selection = col2.multiselect('select ShiftTime ', data.ShiftTime.unique().tolist(), key='time')
 		submitted = st.form_submit_button("Submit this form")
 	
