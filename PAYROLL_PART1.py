@@ -25,9 +25,9 @@ st.markdown(
     }
     .logo-text {
         font-weight:700 !important;
-        font-size:50px !important;
+        font-size:40px !important;
         color: #FFFFFF !important;
-        padding-top: 100px !important;
+        padding-top: 150px !important;
     }
     .logo-img {
         float:right;
