@@ -33,7 +33,7 @@ choice = option_menu("Menu", ["Home", "Login/Sign Up", "Employee Work Management
 #menu = ["About Us","Employee Work Management Portal", "Employee Attendence Form", "Care Planning for Care Home", "Medication Activity"]
 #choice = st.sidebar.selectbox( " ## Menu " ,menu)
 
-if choice == "Login/Sign Up":
+if choice == "Task Completion Form":
 	st.title("Task Completeion Form")
 	st.subheader("Enter your Task details here")
 	with st.form("form1", clear_on_submit = True):
