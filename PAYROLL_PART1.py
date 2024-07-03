@@ -50,7 +50,7 @@ if choice == "Task Completion Form":
 		col1.multiselect("Task Name",( "Medication Administration", "Assist with meal preparation", "Vital Signs Monitoring", "Transportation and Errands", "Housekeeping", "Wound Care", "Assistance with Medical Devices", "Mobility Assistance", "Personal Care with Medical Focus","Personal Hygiene", "Emotional Support"), placeholder = "Choose your Task activity here")
 		check.checkbox("Task Completed")
 		check.checkbox("Task Pending")
-		notes.text_area(" ", placeholder = " Enter short notes about the task and write the reason for not pending task")
+		notes.text_area(" ", placeholder = "Write a note about pending task")
 		#time_selection = col2.multiselect('select ShiftTime ', data.ShiftTime.unique().tolist(), key='time')
 		submitted = st.form_submit_button("Submit this form")
 	
