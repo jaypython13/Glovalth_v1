@@ -22,7 +22,7 @@ st.subheader(":green[Empowering Care Homes with Smart Software Solutions for Sea
 #icons=['house', 'list-task', 'cloud-upload', 'list-task', 'list-task','list-task'], menu_icon="cast", default_index=0)
 
 choice = option_menu("Menu", ["Home", "Login/Sign Up", "Employee Work Management Portal", "Task Completion Form", 
-			      "Care Planning for Care Home", "Document Management Portal", "Document Sync","Medication Activity","Emergency"], 
+			      "Care Planning for Care Home", "Document Management Portal", "Document Sync","Medication Activity","Emergency"],  icons=['home', 'play']
         menu_icon="cast",default_index=0, orientation="horizontal", 
 	styles={
         "container": {"padding": "0!important" },
