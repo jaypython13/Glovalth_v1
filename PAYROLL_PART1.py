@@ -40,8 +40,8 @@ if choice == "Task Completion Form":
 		id = st.text_input("Employee ID") 
 		Clientname = st.text_input("Client name")
 		date = st.date_input("Task Date")
-		starttime =  st.time_input("Start time", value=None)
-		endtime = st.time_input("End time", value=None)
+		starttime =  st.time_input("Start time", datetime.time)
+		endtime = st.time_input("End time", datetime.time)
 		submitted = st.form_submit_button("Submit")
 	
 
