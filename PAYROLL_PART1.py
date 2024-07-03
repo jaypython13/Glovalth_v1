@@ -46,7 +46,7 @@ if choice == "Task Completion Form":
 		endtime = st.time_input("End time", datetime.time(0,0))
 		Tasknotes = st.text_area (" Notes Regarding Time Period", placeholder = " Type your notes here")
 		st.subheader(" Activity Record")
-		col1, check, notes = st.columns(3)
+		col1, check, notes = st.columns(3. gap = 'medium')
 		col1.multiselect("Task Name",( "Medication Administration", "Assist with meal preparation", "Vital Signs Monitoring", "Transportation and Errands", "Housekeeping", "Wound Care", "Assistance with Medical Devices", "Mobility Assistance", "Personal Care with Medical Focus","Personal Hygiene", "Emotional Support"), placeholder = "Choose your Task activity here")
 		check.checkbox("Task Completed")
 		check.checkbox("Task Pending")
