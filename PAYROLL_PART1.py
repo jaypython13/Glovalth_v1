@@ -36,7 +36,7 @@ choice = option_menu("Menu", ["Home", "Login/Sign Up", "Employee Work Management
 
 if choice == "Task Completion Form":
 	st.title("Task Completion Form")
-	st.subheader("Enter your Task details here")
+	st.subheader("Enter your Task details here 👇")
 	with st.form("form1", clear_on_submit = True):
 		
 		id = st.text_input(' Employee ID ', placeholder = "Enter your Employee ID here") 
@@ -47,8 +47,8 @@ if choice == "Task Completion Form":
 		Tasknotes = st.text_area (" Notes Regarding Time Period", placeholder = " Type your notes here")
 		st.subheader(" Activity Record")
 		col1, check, notes = st.columns(3)
-		col1.selectbox("Medication Administration", "Assist with meal preparation", "Vital Signs Monitoring", "Transportation and Errands", "Housekeeping", "Wound Care", "Assistance with Medical Devices", "Mobility Assistance", "Personal Care with Medical Focus","Personal Hygiene", "Emotional Support", placeholder = "Choose your Task activity here")
-		check.checkbox("Completion", "Task Completed")
+		col1.multiselect("Medication Administration", "Assist with meal preparation", "Vital Signs Monitoring", "Transportation and Errands", "Housekeeping", "Wound Care", "Assistance with Medical Devices", "Mobility Assistance", "Personal Care with Medical Focus","Personal Hygiene", "Emotional Support", placeholder = "Choose your Task activity here")
+		check.checkbox("Task Completed")
 		#time_selection = col2.multiselect('select ShiftTime ', data.ShiftTime.unique().tolist(), key='time')
 		submitted = st.form_submit_button("Submit this form")
 	
