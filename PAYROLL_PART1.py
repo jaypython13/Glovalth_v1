@@ -36,7 +36,7 @@ choice = option_menu("Menu", ["Home", "Login/Sign Up", "Employee Work Management
 if choice == "Login/Sign Up":
 	st.title("Task Completeion Form")
 	st.subheader("Enter your Task details here")
-   	with st.form("form1", clear_on_submit = True):
+	with st.form("form1", clear_on_submit = True):
 		id = st.text_input("Enter your Employee ID") 
 		Clientname = st.text_input("Enter your client name")
 		date = st.date_input("Enter the date")
