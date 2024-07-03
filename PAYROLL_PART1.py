@@ -62,7 +62,7 @@ st.image(img)
     #)
    # return img_html
 
-st.markdown(img_to_html('Glovalth_logo.png'), unsafe_allow_html=True)
+#st.markdown(img_to_html('Glovalth_logo.png'), unsafe_allow_html=True)
 
 #st.image("Glovalth_logo.jpeg", width =200)
 
