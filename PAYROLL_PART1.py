@@ -27,7 +27,7 @@ choice = option_menu("Menu", ["Home", "Login/Sign Up", "Employee Work Management
         menu_icon="cast",default_index=0, orientation="horizontal", 
 	styles={
         "container": {"padding": "0!important" },
-        "icon": {"color": "orange", "font-size": "150px"}, 
+        "icon": {"color": "orange", "font-size": "15px"}, 
         "nav-link": {"font-size": "20px", "text-align": "center", "margin":"0px", "--hover-color":  "#000000"},
         "nav-link-selected": {"background-color": "green"},
     	})
