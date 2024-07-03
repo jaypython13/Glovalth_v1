@@ -8,7 +8,7 @@ from streamlit_dynamic_filters import DynamicFilters
 import base64
 from pathlib import Path
 from PIL import Image
-import forms
+import form
 
 
 # Streamlit User Interface part
