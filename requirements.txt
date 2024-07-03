@@ -3,7 +3,7 @@ pandas==2.0.3
 streamlit == 1.36.0
 streamlit_option_menu
 streamlit_dynamic_filters
-forms
+httpx
 #pypi==2.1
 #tabula==1.0.5
 #SQLAlchemy==1.4.46
