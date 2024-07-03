@@ -8,7 +8,6 @@ from streamlit_dynamic_filters import DynamicFilters
 import base64
 from pathlib import Path
 from PIL import Image
-from django import forms
 
 # Streamlit User Interface part
 st.set_page_config(page_title ="Glovalth", page_icon ="	:medical_symbol:")
@@ -35,17 +34,14 @@ choice = option_menu("Menu", ["Home", "Login/Sign Up", "Employee Work Management
 #choice = st.sidebar.selectbox( " ## Menu " ,menu)
 
 if choice == "Login/Sign Up":
-	myForms = {
-    "login": "./forms/login.json",
-    "profile": "./forms/formPerfil.json"
-}
-
-forms.initialize(st)
-
-forms.genericForm(myForms.get("login"))
-if st.button("Confirm"):
-    st.success(f"{forms.getData('user')} clicked")
-
+	st.title("Task Completeion Form")
+	st.subheader("Enter your Task details here")
+   	with st.form("form1", clear_on_submit = True):
+		id = st.text_input("Enter your Employee ID") 
+		Clientname = st.text_input("Enter your client name")
+		date = st.date_input("Enter the date")
+		starttime = st.time ("Enter the task start time")
+		endtime = st.time ("Enter the task end time")
 forms.genericForm(myForms.get("profile"))
 if st.button("Save"):
     st.success("Saved")	
