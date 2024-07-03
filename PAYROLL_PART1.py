@@ -11,7 +11,7 @@ from pathlib import Path
 from PIL import Image
 
 # Streamlit User Interface part
-st.set_page_config(page_title ="Glovalth", page_icon ="	:medical_symbol:", layout= "wide", backgroundColor="#FFFFFF")
+st.set_page_config(page_title ="Glovalth", page_icon ="	:medical_symbol:", layout= "wide", base="dark")
 
 img = Image.open('Glovalth_logo.png')
 st.image(img)
