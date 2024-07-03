@@ -7,23 +7,20 @@ from streamlit_option_menu import option_menu
 from streamlit_dynamic_filters import DynamicFilters
 import base64
 from pathlib import Path
-
+from PIL import Image
 import forms
 
-
-#df1 = pd.read_csv('E001_EMP_DATA.csv',usecols = ['Employee ID','Location', 'Date','Day', 'Shift Timing','Tasks'])
-#df2 = pd.read_csv('E012_EMP_DATA.csv',usecols = ['Employee ID','Location', 'Date','Day', 'Shift Timing','Tasks'])
 
 # Streamlit User Interface part
 st.set_page_config(page_title ="Glovalth", page_icon ="	:medical_symbol:")
 
-from PIL import Image
 img = Image.open('Glovalth_logo.png')
 st.image(img)
 st.header(":blue[Glovalth Health Tech Limited]") 
 st.header(":green[Empowering Care Homes with Smart Software Solutions for Seamless Operations and Exceptional Resident Care]")
-	#choice1 = option_menu("Main Menu", ["Home", "Employee Work Management Portal", "Employee Attendence Form", "Care Planning for Care Home", "Medication Activity", "Document Verification for Care Home", "Emergency", ], 
-        #icons=['house', 'list-task', 'cloud-upload', 'list-task', 'list-task','list-task'], menu_icon="cast", default_index=0)
+	
+#choice1 = option_menu("Main Menu", ["Home", "Employee Work Management Portal", "Employee Attendence Form", "Care Planning for Care Home", "Medication Activity", "Document Verification for Care Home", "Emergency", ], 
+#icons=['house', 'list-task', 'cloud-upload', 'list-task', 'list-task','list-task'], menu_icon="cast", default_index=0)
 
 choice = option_menu("Menu", ["Home", "Login/Sign Up", "Employee Work Management Portal", "Task Completion Form", 
 			      "Care Planning for Care Home", "Document Management Portal", "Document Sync","Medication Activity","Emergency"], 
@@ -37,7 +34,8 @@ choice = option_menu("Menu", ["Home", "Login/Sign Up", "Employee Work Management
 
 #menu = ["About Us","Employee Work Management Portal", "Employee Attendence Form", "Care Planning for Care Home", "Medication Activity"]
 #choice = st.sidebar.selectbox( " ## Menu " ,menu)
-if choice == "Login/Sign Up"
+
+if choice == "Login/Sign Up":
 	myForms = {
     "login": "./forms/login.json",
     "profile": "./forms/formPerfil.json"
