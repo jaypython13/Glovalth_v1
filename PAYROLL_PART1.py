@@ -31,6 +31,7 @@ st.markdown(
     }
     .logo-img {
         float:right;
+	height:200;
     }
     </style>
     """,
