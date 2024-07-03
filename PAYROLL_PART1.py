@@ -14,57 +14,10 @@ from pathlib import Path
 
 # Streamlit User Interface part
 st.set_page_config(page_title ="Glovalth", page_icon ="	:medical_symbol:")
-#LOGO_IMAGE = "Glovalth_logo.png"
+
 from PIL import Image
 img = Image.open('Glovalth_logo.png')
-st.image(img)
-
-#st.markdown(
-   # """
-   # <style>
-    #.container {
-       # display: flex;
-    #}
-    #.logo-text {
-        #font-weight:700 !important;
-        #font-size:70px !important;
-        #color: #FFFFFF !important;
-        #padding-top: 150px !important;
-    #}
-    #.logo-img {
-        #float:right;
-	#width: 100px;
-        #height: 100;
-    #}
-    #</style>
-    #""",
-    #unsafe_allow_html=True
-#)
-
-#st.markdown(
-    #f"""
-    #<div class="container">
-       # <img class="logo-img" src="data:image/png;base64,{base64.b64encode(open(LOGO_IMAGE, "rb").read()).decode()}">
-        #<p class="logo-text">Glovalth Health Tech Care Limited</p>
-    #</div>
-    #""",
-   # unsafe_allow_html=True
-#)
-#load_bootstrap()
-
-#def img_to_bytes(img_path):
-    #img_bytes = Path(img_path).read_bytes()
-    #encoded = base64.b64encode(img_bytes).decode()
-   # return encoded
-#def img_to_html(img_path):
-   # img_html = "<img src='data:image/png;base64,{}' class='img-fluid'>".format(
-      #img_to_bytes(img_path),"<img class="logo-text" Glovalth Health Tech Care Limited>"
-    #)
-   # return img_html
-
-#st.markdown(img_to_html('Glovalth_logo.png'), unsafe_allow_html=True)
-
-#st.image("Glovalth_logo.jpeg", width =200)
+st.image(img, width =150)
 
 
 	#choice1 = option_menu("Main Menu", ["Home", "Employee Work Management Portal", "Employee Attendence Form", "Care Planning for Care Home", "Medication Activity", "Document Verification for Care Home", "Emergency", ], 
