@@ -52,15 +52,15 @@ st.image(img)
 #)
 #load_bootstrap()
 
-def img_to_bytes(img_path):
-    img_bytes = Path(img_path).read_bytes()
-    encoded = base64.b64encode(img_bytes).decode()
-    return encoded
-def img_to_html(img_path):
-    img_html = "<img src='data:image/png;base64,{}' class='img-fluid'>".format(
-      img_to_bytes(img_path),"<img class="logo-text" Glovalth Health Tech Care Limited>"
-    )
-    return img_html
+#def img_to_bytes(img_path):
+    #img_bytes = Path(img_path).read_bytes()
+    #encoded = base64.b64encode(img_bytes).decode()
+   # return encoded
+#def img_to_html(img_path):
+   # img_html = "<img src='data:image/png;base64,{}' class='img-fluid'>".format(
+      #img_to_bytes(img_path),"<img class="logo-text" Glovalth Health Tech Care Limited>"
+    #)
+   # return img_html
 
 st.markdown(img_to_html('Glovalth_logo.png'), unsafe_allow_html=True)
 
