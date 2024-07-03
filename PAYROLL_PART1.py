@@ -7,7 +7,7 @@ from streamlit_option_menu import option_menu
 from streamlit_dynamic_filters import DynamicFilters
 import base64
 from pathlib import Path
-from utilities import load_bootstrap
+f
 
 #df1 = pd.read_csv('E001_EMP_DATA.csv',usecols = ['Employee ID','Location', 'Date','Day', 'Shift Timing','Tasks'])
 #df2 = pd.read_csv('E012_EMP_DATA.csv',usecols = ['Employee ID','Location', 'Date','Day', 'Shift Timing','Tasks'])
@@ -17,7 +17,11 @@ st.set_page_config(page_title ="Glovalth", page_icon ="	:medical_symbol:")
 
 #primaryColor="#FF4B4B"
 #backgroundColor="#FFFFFF"
+
 LOGO_IMAGE = "Glovalth_logo.png"
+from PIL import Image
+img = Image.open('Glovalth_logo.png')
+st.image(img)
 
 st.markdown(
     """
