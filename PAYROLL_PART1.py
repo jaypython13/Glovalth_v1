@@ -6,6 +6,8 @@ import csv
 from streamlit_option_menu import option_menu
 from streamlit_dynamic_filters import DynamicFilters
 import base64
+from pathlib import Path
+from utilities import load_bootstrap
 
 #df1 = pd.read_csv('E001_EMP_DATA.csv',usecols = ['Employee ID','Location', 'Date','Day', 'Shift Timing','Tasks'])
 #df2 = pd.read_csv('E012_EMP_DATA.csv',usecols = ['Employee ID','Location', 'Date','Day', 'Shift Timing','Tasks'])
@@ -48,7 +50,19 @@ st.markdown(
     """,
     unsafe_allow_html=True
 )
+load_bootstrap()
 
+def img_to_bytes(img_path):
+    img_bytes = Path(img_path).read_bytes()
+    encoded = base64.b64encode(img_bytes).decode()
+    return encoded
+def img_to_html(img_path):
+    img_html = "<img src='data:image/png;base64,{}' class='img-fluid'>".format(
+      img_to_bytes(img_path)
+    )
+    return img_html
+
+st.markdown(img_to_html('Glovalth_logo.png'), unsafe_allow_html=True)
 
 #st.image("Glovalth_logo.jpeg", width =200)
 
