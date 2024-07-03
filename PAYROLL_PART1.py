@@ -44,7 +44,7 @@ if choice == "Task Completion Form":
 		date = st.date_input("Task Date")
 		starttime =  st.time_input("Start time", datetime.time(0,0))
 		endtime = st.time_input("End time", datetime.time(0,0))
-		Tasknotes = st.text_area (" Notes Regarding Time Period")
+		Tasknotes = st.text_area (" Notes Regarding Time Period", placeholder = " Type your notes here")
 		st.subheader(" Activity Record")
 		col1, col2, col3 = st.columns(3)
 		submitted = st.form_submit_button("Submit this form")
