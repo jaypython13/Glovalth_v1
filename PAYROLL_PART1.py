@@ -43,9 +43,9 @@ if choice == "Task Completion Form":
 		#starttime = st.time ("Enter the task start time")
 		#endtime = st.time ("Enter the task end time")
 		form.form_submit_button("Submit")
-forms.genericForm(myForms.get("profile"))
-if st.button("Save"):
-    st.success("Saved")	
+#forms.genericForm(myForms.get("profile"))
+#if st.button("Save"):
+   # st.success("Saved")	
 
 if choice == "Employee Work Management Portal":
 	st.title(" Welcome to Glovalth Employee Portal")
