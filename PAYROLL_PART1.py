@@ -52,6 +52,7 @@ if choice == "Task Completion Form":
 		check.checkbox("Task Pending")
 		notes.text_area(" ", placeholder = "Write notes on any task or pending task")
 		clientnotes = st.text_area (" Patient Notes *", placeholder = " Type your feedback here")
+		subdate = st.date_input("Task Date *")
 		#time_selection = col2.multiselect('select ShiftTime ', data.ShiftTime.unique().tolist(), key='time')
 		submitted = st.form_submit_button("Submit this form")
 	
