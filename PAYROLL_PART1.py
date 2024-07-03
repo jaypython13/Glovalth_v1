@@ -28,8 +28,8 @@ choice = option_menu("Menu", ["Home", "Login/Sign Up", "Employee Work Management
 	styles={
         "container": {"padding": "0!important" },
         "icon": {"color": "orange", "font-size": "15px"}, 
-        "nav-link": {"font-size": "20px", "text-align": "center", "margin":"10px", "--hover-color":  "#000000","background-color": "blue"},
-        "nav-link-selected": {"background-color": "green"},
+        "nav-link": {"font-size": "20px", "text-align": "center", "margin":"20px", "--hover-color":  "#000000","background-color": "green"},
+        "nav-link-selected": {"background-color": "blue"},
     	})
 
 #menu = ["About Us","Employee Work Management Portal", "Employee Attendence Form", "Care Planning for Care Home", "Medication Activity"]
