@@ -8,6 +8,8 @@ from streamlit_dynamic_filters import DynamicFilters
 import base64
 from pathlib import Path
 
+import forms
+
 
 #df1 = pd.read_csv('E001_EMP_DATA.csv',usecols = ['Employee ID','Location', 'Date','Day', 'Shift Timing','Tasks'])
 #df2 = pd.read_csv('E012_EMP_DATA.csv',usecols = ['Employee ID','Location', 'Date','Day', 'Shift Timing','Tasks'])
@@ -23,7 +25,7 @@ st.header(":green[Empowering Care Homes with Smart Software Solutions for Seamle
 	#choice1 = option_menu("Main Menu", ["Home", "Employee Work Management Portal", "Employee Attendence Form", "Care Planning for Care Home", "Medication Activity", "Document Verification for Care Home", "Emergency", ], 
         #icons=['house', 'list-task', 'cloud-upload', 'list-task', 'list-task','list-task'], menu_icon="cast", default_index=0)
 
-choice = option_menu("Menu", ["Home", "Employee Work Management Portal", "Task Completion Form", 
+choice = option_menu("Menu", ["Home", "Login/Sign Up", "Employee Work Management Portal", "Task Completion Form", 
 			      "Care Planning for Care Home", "Document Management Portal", "Document Sync","Medication Activity","Emergency"], 
         icons=['house'], menu_icon="cast",default_index=1, orientation="horizontal", 
 	styles={
@@ -35,7 +37,21 @@ choice = option_menu("Menu", ["Home", "Employee Work Management Portal", "Task C
 
 #menu = ["About Us","Employee Work Management Portal", "Employee Attendence Form", "Care Planning for Care Home", "Medication Activity"]
 #choice = st.sidebar.selectbox( " ## Menu " ,menu)
+if choice == "Login/Sign Up"
+	myForms = {
+    "login": "./forms/login.json",
+    "profile": "./forms/formPerfil.json"
+}
 
+forms.initialize(st)
+
+forms.genericForm(myForms.get("login"))
+if st.button("Confirm"):
+    st.success(f"{forms.getData('user')} clicked")
+
+forms.genericForm(myForms.get("profile"))
+if st.button("Save"):
+    st.success("Saved")	
 
 if choice == "Employee Work Management Portal":
 	st.title(" Welcome to Glovalth Employee Portal")
