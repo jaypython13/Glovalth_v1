@@ -16,7 +16,7 @@ st.set_page_config(page_title ="Glovalth", page_icon ="	:medical_symbol:")
 img = Image.open('Glovalth_logo.png')
 st.image(img)
 st.header(":blue[Glovalth Health Tech Limited]") 
-st.subheader(":green[Empowering Care Homes with Smart Software Solutions for Seamless Operations and Exceptional Resident Care]")
+st.subheader(":green[We Empower Care Homes with Smart Software Solutions for Seamless Operations and Exceptional Resident Care]")
 	
 #choice1 = option_menu("Main Menu", ["Home", "Employee Work Management Portal", "Employee Attendence Form", "Care Planning for Care Home", "Medication Activity", "Document Verification for Care Home", "Emergency", ], 
 #icons=['house', 'list-task', 'cloud-upload', 'list-task', 'list-task','list-task'], menu_icon="cast", default_index=0)
