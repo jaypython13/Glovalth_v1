@@ -40,9 +40,9 @@ if choice == "Login/Sign Up":
 		id = st.text_input("Enter your Employee ID") 
 		Clientname = st.text_input("Enter your client name")
 		date = st.date_input("Enter the date")
-		starttime = st.time ("Enter the task start time")
-		endtime = st.time ("Enter the task end time")
-		submitted = st.form_submit_button("Submit")
+		#starttime = st.time ("Enter the task start time")
+		#endtime = st.time ("Enter the task end time")
+		form.form_submit_button("Submit")
 forms.genericForm(myForms.get("profile"))
 if st.button("Save"):
     st.success("Saved")	
