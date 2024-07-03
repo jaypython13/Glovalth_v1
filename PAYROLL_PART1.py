@@ -15,7 +15,7 @@ st.set_page_config(page_title ="Glovalth", page_icon ="	:medical_symbol:")
 
 primaryColor="#FF4B4B"
 backgroundColor="#FFFFFF"
-LOGO_IMAGE = "Glovalth_logo.jpeg"
+LOGO_IMAGE = "Glovalth_logo.png"
 
 st.markdown(
     """
