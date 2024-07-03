@@ -53,8 +53,8 @@ if choice == "Task Completion Form":
 		notes.text_area(" ", placeholder = "Write notes on any task or pending task")
 		clientnotes = st.text_area (" Patient Notes *", placeholder = " Type your feedback here")
 		subdate = st.date_input("Form Submission Date*")
-		empsign, patientsign = st.columns(2, vertical_alignment="bottom")
 		st.subheader("Signature*")
+		empsign, patientsign = st.columns(2, vertical_alignment="bottom")
 		empsign.info("Employee Signature✍️ ")
 		patientsign.info( "Patient Signature ✍️")
 		
