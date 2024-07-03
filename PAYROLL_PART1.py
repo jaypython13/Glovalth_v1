@@ -8,8 +8,7 @@ from streamlit_dynamic_filters import DynamicFilters
 import base64
 from pathlib import Path
 from PIL import Image
-import form
-
+from django import forms
 
 # Streamlit User Interface part
 st.set_page_config(page_title ="Glovalth", page_icon ="	:medical_symbol:")
