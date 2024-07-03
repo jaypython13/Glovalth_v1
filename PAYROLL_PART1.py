@@ -55,7 +55,7 @@ if choice == "Task Completion Form":
 		notes.text_area(" ", placeholder = "Write notes on any task or pending task")
 		clientnotes = st.text_area (" Patient Notes *", placeholder = " Type your feedback here")
 		upload_image = st.file_uploader("Upload image file relevant to your task if needed", accept_multiple_files=True, type=['jpg','jpeg','png'])
-		st.image("upload_image")
+		
 		subdate = st.date_input("Form Submission Date*")
 		st.subheader("Signature*")
 		empsign, patientsign = st.columns(2, vertical_alignment="bottom")
