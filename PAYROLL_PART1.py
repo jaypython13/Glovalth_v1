@@ -10,7 +10,8 @@ import base64
 from pathlib import Path
 from PIL import Image
 
-[theme]
+
+
 primaryColor = "#0000FF"
 backgroundColor = "#FFFFFF"
 secondaryBackgroundColor = "#F0F0F0"
