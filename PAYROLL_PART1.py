@@ -39,7 +39,7 @@ if choice == "Task Completion Form":
 	st.subheader("Enter your Task details here")
 	with st.form("form1", clear_on_submit = True):
 		st.info("Employee Id")
-		id = st.text_input(" ", place holder = "Enter your Employee ID here") 
+		id = st.text_input( place holder = "Enter your Employee ID here") 
 		Clientname = st.text_input("Client name")
 		date = st.date_input("Task Date")
 		starttime =  st.time_input("Start time", datetime.time(0,0))
