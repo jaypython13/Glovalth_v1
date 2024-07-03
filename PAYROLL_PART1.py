@@ -47,7 +47,7 @@ if choice == "Task Completion Form":
 		Tasknotes = st.text_area (" Notes Regarding Time Period", placeholder = " Type your notes here")
 		st.subheader(" Activity Record")
 		col1, check, notes = st.columns(3)
-		activity = col1.selectbox("Choose your Task activity here", ("Medication Administration", "Assist with meal preparation", "Vital Signs Monitoring", "Transportation and Errands", "Housekeeping", "Wound Care", "Assistance with Medical Devices", "Mobility Assistance", "Personal Care with Medical Focus","personal Hygiene", "Emotional Support"))
+		activity = col1.selectbox("Task",  placeholder = "Choose your Task activity here"("Medication Administration", "Assist with meal preparation", "Vital Signs Monitoring", "Transportation and Errands", "Housekeeping", "Wound Care", "Assistance with Medical Devices", "Mobility Assistance", "Personal Care with Medical Focus","personal Hygiene", "Emotional Support"))
 
 		#time_selection = col2.multiselect('select ShiftTime ', data.ShiftTime.unique().tolist(), key='time')
 		submitted = st.form_submit_button("Submit this form")
