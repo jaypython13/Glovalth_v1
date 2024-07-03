@@ -48,7 +48,8 @@ if choice == "Task Completion Form":
 		st.subheader(" Activity Record")
 		col1, check, notes = st.columns(3)
 		col1.multiselect("Task Name",( "Medication Administration", "Assist with meal preparation", "Vital Signs Monitoring", "Transportation and Errands", "Housekeeping", "Wound Care", "Assistance with Medical Devices", "Mobility Assistance", "Personal Care with Medical Focus","Personal Hygiene", "Emotional Support"), placeholder = "Choose your Task activity here")
-		check.checkbox("\n \n Task Completed")
+		check.checkbox("All Tasks Completed")
+		check.checkbox("Some Tasks Pending")
 		#time_selection = col2.multiselect('select ShiftTime ', data.ShiftTime.unique().tolist(), key='time')
 		submitted = st.form_submit_button("Submit this form")
 	
