@@ -80,8 +80,8 @@ if choice == "Employee Work Management Portal":
 		dynamic_filters = DynamicFilters(df, filters=['Date', 'ShiftTime', 'TaskType'])
 		#st.write("Find your assigned work here 👇")
 		dynamic_filters.display_filters(location='columns', num_columns=3, gap='medium')
-		empdata = dynamic_filters.display_df()
-		AgGrid(empdata)
+		dynamic_filters.display_df()
+	
 
 		#col1, col2 = st.columns(2)
 		#date_selection = col1.multiselect('select Date ', data.Date.unique().tolist(), key='date')
