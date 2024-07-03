@@ -18,7 +18,7 @@ st.set_page_config(page_title ="Glovalth", page_icon ="	:medical_symbol:")
 from PIL import Image
 img = Image.open('Glovalth_logo.png')
 st.image(img)
-st.subheader(":orange[Glovalth Health Tech]  \n : orange [Your Complete Solution Provider for Care Home]")
+st.subheader(":orange[Glovalth Health Tech] \n :orange[Your Complete Solution Provider for Care Home]")
 
 	#choice1 = option_menu("Main Menu", ["Home", "Employee Work Management Portal", "Employee Attendence Form", "Care Planning for Care Home", "Medication Activity", "Document Verification for Care Home", "Emergency", ], 
         #icons=['house', 'list-task', 'cloud-upload', 'list-task', 'list-task','list-task'], menu_icon="cast", default_index=0)
