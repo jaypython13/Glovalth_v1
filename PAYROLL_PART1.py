@@ -55,7 +55,7 @@ if choice == "Task Completion Form":
 		subdate = st.date_input("Form Submission Date*")
 		empsign, patientsign = st.columns(2, vertical_alignment="bottom")
 		st.subheader("Signature*")
-		empsign.buttom ("Employee Signature✍️ ")
+		empsign.info("Employee Signature✍️ ")
 		patientsign.info( "Patient Signature ✍️")
 		
 		#time_selection = col2.multiselect('select ShiftTime ', data.ShiftTime.unique().tolist(), key='time')
