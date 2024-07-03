@@ -7,54 +7,50 @@ from streamlit_option_menu import option_menu
 from streamlit_dynamic_filters import DynamicFilters
 import base64
 from pathlib import Path
-f
+
 
 #df1 = pd.read_csv('E001_EMP_DATA.csv',usecols = ['Employee ID','Location', 'Date','Day', 'Shift Timing','Tasks'])
 #df2 = pd.read_csv('E012_EMP_DATA.csv',usecols = ['Employee ID','Location', 'Date','Day', 'Shift Timing','Tasks'])
 
 # Streamlit User Interface part
 st.set_page_config(page_title ="Glovalth", page_icon ="	:medical_symbol:")
-
-#primaryColor="#FF4B4B"
-#backgroundColor="#FFFFFF"
-
-LOGO_IMAGE = "Glovalth_logo.png"
+#LOGO_IMAGE = "Glovalth_logo.png"
 from PIL import Image
 img = Image.open('Glovalth_logo.png')
 st.image(img)
 
-st.markdown(
-    """
-    <style>
-    .container {
-        display: flex;
-    }
-    .logo-text {
-        font-weight:700 !important;
-        font-size:70px !important;
-        color: #FFFFFF !important;
-        padding-top: 150px !important;
-    }
-    .logo-img {
-        float:right;
-	width: 100px;
-        height: 100;
-    }
-    </style>
-    """,
-    unsafe_allow_html=True
-)
+#st.markdown(
+   # """
+   # <style>
+    #.container {
+       # display: flex;
+    #}
+    #.logo-text {
+        #font-weight:700 !important;
+        #font-size:70px !important;
+        #color: #FFFFFF !important;
+        #padding-top: 150px !important;
+    #}
+    #.logo-img {
+        #float:right;
+	#width: 100px;
+        #height: 100;
+    #}
+    #</style>
+    #""",
+    #unsafe_allow_html=True
+#)
 
-st.markdown(
-    f"""
-    <div class="container">
-        <img class="logo-img" src="data:image/png;base64,{base64.b64encode(open(LOGO_IMAGE, "rb").read()).decode()}">
-        <p class="logo-text">Glovalth Health Tech Care Limited</p>
-    </div>
-    """,
-    unsafe_allow_html=True
-)
-load_bootstrap()
+#st.markdown(
+    #f"""
+    #<div class="container">
+       # <img class="logo-img" src="data:image/png;base64,{base64.b64encode(open(LOGO_IMAGE, "rb").read()).decode()}">
+        #<p class="logo-text">Glovalth Health Tech Care Limited</p>
+    #</div>
+    #""",
+   # unsafe_allow_html=True
+#)
+#load_bootstrap()
 
 def img_to_bytes(img_path):
     img_bytes = Path(img_path).read_bytes()
