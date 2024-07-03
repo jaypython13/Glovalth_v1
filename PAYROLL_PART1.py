@@ -24,11 +24,11 @@ st.subheader(":green[Empowering Care Homes with Smart Software Solutions for Sea
 choice = option_menu("Menu", ["Home", "Login/Sign Up", "Employee Work Management Portal", "Task Completion Form", 
 			      "Care Planning for Care Home", "Document Management Portal", "Document Sync","Medication Activity","Emergency"],  
 		     icons=['home', 'home', 'home', 'home','home', 'home', 'home','home', 'home'],
-        menu_icon="cast",default_index=0, 
+        menu_icon="cast",default_index=0, orientation="horizontal",
 	styles={
-        "container": {"padding": "1!important" },
-        "icon": {"color": "orange", "font-size": "15px"}, 
-        "nav-link": {"font-size": "15px", "text-align": "center", "margin":"0px", "--hover-color":  "#000000","background-color": "grey"},
+        "container": {"padding": "0!important" },
+        "icon": {"color": "orange", "font-size": "20px"}, 
+        "nav-link": {"font-size": "15px", "text-align": "center", "margin":"10px", "--hover-color":  "#000000","background-color": "grey"},
         "nav-link-selected": {"background-color": "green"},
     	})
 
