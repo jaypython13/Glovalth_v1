@@ -58,7 +58,7 @@ def img_to_bytes(img_path):
     return encoded
 def img_to_html(img_path):
     img_html = "<img src='data:image/png;base64,{}' class='img-fluid'>".format(
-      img_to_bytes(img_path)
+      img_to_bytes(img_path), "<p class="logo-text">Glovalth Health Tech Care Limited</p>"
     )
     return img_html
 
