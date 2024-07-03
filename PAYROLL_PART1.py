@@ -34,18 +34,16 @@ choice = option_menu("Menu", ["Home", "Login/Sign Up", "Employee Work Management
 #choice = st.sidebar.selectbox( " ## Menu " ,menu)
 
 if choice == "Task Completion Form":
-	st.title("Task Completeion Form")
+	st.title("Task Completion Form")
 	st.subheader("Enter your Task details here")
 	with st.form("form1", clear_on_submit = True):
-		id = st.text_input("Enter your Employee ID") 
-		Clientname = st.text_input("Enter your client name")
-		date = st.date_input("Enter the date")
+		id = st.text_input("Employee ID") 
+		Clientname = st.text_input("Client name")
+		date = st.date_input("Task Date")
 		#starttime = st.time ("Enter the task start time")
 		#endtime = st.time ("Enter the task end time")
 		submitted = st.form_submit_button("Submit")
-#forms.genericForm(myForms.get("profile"))
-#if st.button("Save"):
-   # st.success("Saved")	
+	
 
 if choice == "Employee Work Management Portal":
 	st.title(" Welcome to Glovalth Employee Portal")
