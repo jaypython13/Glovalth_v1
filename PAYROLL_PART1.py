@@ -21,10 +21,10 @@ st.subheader(":green[Empowering Care Homes with Smart Software Solutions for Sea
 #choice1 = option_menu("Main Menu", ["Home", "Employee Work Management Portal", "Employee Attendence Form", "Care Planning for Care Home", "Medication Activity", "Document Verification for Care Home", "Emergency", ], 
 #icons=['house', 'list-task', 'cloud-upload', 'list-task', 'list-task','list-task'], menu_icon="cast", default_index=0)
 
-choice = option_menu(None, ["Home", "Login/Sign Up", "Employee Work Management Portal", "Task Completion Form", 
+choice = option_menu(Menu, ["Home", "Login/Sign Up", "Employee Work Management Portal", "Task Completion Form", 
 			      "Care Planning for Care Home", "Document Management Portal", "Document Sync","Medication Activity","Emergency"],  
 		     icons=['home', 'home', 'home', 'home','home', 'home', 'home','home', 'home'],
-        menu_icon="cast",default_index=0, orientation="horizontal",
+        menu_icon="cast",default_index=1, orientation="horizontal",
 	styles={
         "container": {"padding": "0!important" },
         "icon": {"color": "orange", "font-size": "20px"}, 
