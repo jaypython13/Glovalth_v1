@@ -28,7 +28,7 @@ choice = option_menu("Menu", ["Home", "Login/Sign Up", "Employee Work Management
 	styles={
         "container": {"padding": "0!important" },
         "icon": {"color": "orange", "font-size": "150px"}, 
-        "nav-link": {"font-size": "15px", "text-align": "center", "margin":"2px", "--hover-color":  "#000000"},
+        "nav-link": {"font-size": "15px", "text-align": "center", "margin":"0px", "--hover-color":  "#000000"},
         "nav-link-selected": {"background-color": "green"},
     	})
 
