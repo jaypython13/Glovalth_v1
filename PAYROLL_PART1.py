@@ -36,7 +36,7 @@ choice = option_menu("Menu", ["Home", "Login/Sign Up", "Employee Work Management
 
 if choice == "Task Completion Form":
 	st.title("Task Completion Form")
-	st.info("Both the caregiver and the patient/client are required to sign this form.")
+	st.info("⚠️ Both the caregiver and the patient/client are required to sign this form.")
 	st.subheader("Enter your Task details here 👇")
 	with st.form("form1", clear_on_submit = True):
 		
