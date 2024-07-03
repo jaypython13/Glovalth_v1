@@ -25,7 +25,7 @@ st.markdown(
     }
     .logo-text {
         font-weight:700 !important;
-        font-size:40px !important;
+        font-size:70px !important;
         color: #FFFFFF !important;
         padding-top: 150px !important;
     }
