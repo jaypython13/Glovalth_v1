@@ -10,12 +10,6 @@ import base64
 from pathlib import Path
 from PIL import Image
 
-
-
-primaryColor = "#0000FF"
-backgroundColor = "#FFFFFF"
-secondaryBackgroundColor = "#F0F0F0"
-textColor = "#000000"
 # Streamlit User Interface part
 st.set_page_config(page_title ="Glovalth", page_icon ="	:medical_symbol:", layout= "wide")
 
@@ -60,6 +54,7 @@ if choice == "Task Completion Form":
 		check.checkbox("Task Pending")
 		notes.text_area(" ", placeholder = "Write notes on any task or pending task")
 		clientnotes = st.text_area (" Patient Notes *", placeholder = " Type your feedback here")
+		uploaded_files = st.file_uploader("Upload image file relevant to your task if needed", accept_multiple_files=True)
 		subdate = st.date_input("Form Submission Date*")
 		st.subheader("Signature*")
 		empsign, patientsign = st.columns(2, vertical_alignment="bottom")
