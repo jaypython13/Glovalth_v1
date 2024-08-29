@@ -52,7 +52,6 @@ if choice == "Medication Activity":
 
 if choice == "Emergency":
 	st.header(":red[We are Working on It! Thank you for your interest in our product. We are currently fine-tuning this feature to provide you with the best experienc
-
 		  
 if choice == "Task Completion Form":
 	st.title("Task Completion Form")
