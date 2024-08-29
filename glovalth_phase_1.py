@@ -35,6 +35,11 @@ choice = option_menu('Menu', ["Home", "Login/Sign Up", "Employee Work Management
 #menu = ["About Us","Employee Work Management Portal", "Employee Attendence Form", "Care Planning for Care Home", "Medication Activity"]
 #choice = st.sidebar.selectbox( " ## Menu " ,menu)
 
+if choice == "Login/Sign Up"
+	st.title("We're currently working on this feature! Thank you for your patience while we fine-tune everything. Stay tuned for updates!")
+
+
+
 if choice == "Task Completion Form":
 	st.title("Task Completion Form")
 	
