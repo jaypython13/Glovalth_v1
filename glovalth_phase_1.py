@@ -39,19 +39,19 @@ if choice == "Login/Sign Up":
 	st.header(":red[We are Working on It! Thank you for your interest in our product. We are currently fine-tuning this feature to provide you with the best experience possible. Please check back soon!]")
 
 if choice == "Care Planning for Care Home":
-	st.header(":red[We are Working on It! Thank you for your interest in our product. We are currently fine-tuning this feature to provide you with the best experienc
+	st.header(":red[We are Working on It! Thank you for your interest in our product. We are currently fine-tuning this feature to provide you with the best experience possible. Please check back soon!]")
 
 if choice == "Document Management Portal":
-	st.header(":red[We are Working on It! Thank you for your interest in our product. We are currently fine-tuning this feature to provide you with the best experienc
+	st.header(":red[We are Working on It! Thank you for your interest in our product. We are currently fine-tuning this feature to provide you with the best experience possible. Please check back soon!]")
 
 if choice == "Document Sync":
-	st.header(":red[We are Working on It! Thank you for your interest in our product. We are currently fine-tuning this feature to provide you with the best experienc
+	st.header(":red[We are Working on It! Thank you for your interest in our product. We are currently fine-tuning this feature to provide you with the best experience possible. Please check back soon!]")
 
 if choice == "Medication Activity":
-	st.header(":red[We are Working on It! Thank you for your interest in our product. We are currently fine-tuning this feature to provide you with the best experienc
+	st.header(":red[We are Working on It! Thank you for your interest in our product. We are currently fine-tuning this feature to provide you with the best experience possible. Please check back soon!]")
 
 if choice == "Emergency":
-	st.header(":red[We are Working on It! Thank you for your interest in our product. We are currently fine-tuning this feature to provide you with the best experienc
+	st.header(":red[We are Working on It! Thank you for your interest in our product. We are currently fine-tuning this feature to provide you with the best experience possible. Please check back soon!]")
 		  
 if choice == "Task Completion Form":
 	st.title("Task Completion Form")
