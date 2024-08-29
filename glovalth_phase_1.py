@@ -36,7 +36,7 @@ choice = option_menu('Menu', ["Home", "Login/Sign Up", "Employee Work Management
 #choice = st.sidebar.selectbox( " ## Menu " ,menu)
 
 if choice == "Login/Sign Up":
-	st.title(": green [We're currently working on this feature! Thank you for your patience while we fine-tune everything. Stay tuned for updates!]")
+	st.title(":green [We are currently working on this feature! Thank you for your patience while we fine-tune everything. Stay tuned for updates!]")
 
 
 
