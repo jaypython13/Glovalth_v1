@@ -36,7 +36,7 @@ choice = option_menu('Menu', ["Home", "Login/Sign Up", "Employee Work Management
 #choice = st.sidebar.selectbox( " ## Menu " ,menu)
 
 if choice == "Login/Sign Up":
-	st.header(":green [We're Working on It! \n Thank you for your interest in our product. We're currently fine-tuning this feature to provide you with the best experience possible. Please check back soon!]")
+	st.header(":green[We are Working on It! Thank you for your interest in our product. We are currently fine-tuning this feature to provide you with the best experience possible. Please check back soon!]")
 
 
 
