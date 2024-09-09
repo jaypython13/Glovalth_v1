@@ -21,7 +21,7 @@ st.subheader(":green[Empowering Care Homes with Smart Software Solutions for Sea
 #choice1 = option_menu("Main Menu", ["Home", "Employee Work Management Portal", "Employee Attendence Form", "Care Planning for Care Home", "Medication Activity", "Document Verification for Care Home", "Emergency", ], 
 #icons=['house', 'list-task', 'cloud-upload', 'list-task', 'list-task','list-task'], menu_icon="cast", default_index=0)
 
-choice = option_menu('Menu', [ "Home","Login/Sign Up", "Employee Work Management Portal", "Task Completion Form", 
+choice = option_menu('Menu', [ "Home","Login or Sign Up", "Employee Work Management Portal", "Task Completion Form", 
 			      "Care Planning for Care Home", "Document Management Portal", "Document Sync","Medication Activity","Emergency"],  
 		     icons=['home', 'home', 'home', 'home','home', 'home', 'home','home', 'home'],
         menu_icon="cast",default_index=1, orientation="horizontal",
@@ -34,12 +34,9 @@ choice = option_menu('Menu', [ "Home","Login/Sign Up", "Employee Work Management
 
 #menu = ["About Us","Employee Work Management Portal", "Employee Attendence Form", "Care Planning for Care Home", "Medication Activity"]
 #choice = st.sidebar.selectbox( " ## Menu " ,menu)
-
-
 	
 if choice == "Task Completion Form":
 	st.title("Task Completion Form")
-	
 	st.subheader("Enter your Task details here 👇")
 	with st.form("form1", clear_on_submit = True):
 		
@@ -101,7 +98,7 @@ if choice == "Employee Work Management Portal":
 	   st.write("""##### If you dont know your Employee number or work is not allocated, Please contact your organisation""")
                 
 
-if choice == "Login/Sign Up":
+if choice == "Login or Sign Up":
 	st.header(":red[We are Working on It! Thank you for your interest in our product. We are currently fine-tuning this feature to provide you with the best experience possible. Please check back soon!]")
 
 if choice == "Care Planning for Care Home":
