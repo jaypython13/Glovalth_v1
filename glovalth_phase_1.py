@@ -70,7 +70,7 @@ if choice == "Task Completion Form":
 
 if choice == "Employee Work Management Portal":
 	st.title(" Welcome to Glovalth Employee Portal")
-	emp_number = st.text_input(r"$\textsf{\Large Enter your Employee ID here}$")
+	emp_number = st.text_input(r"$\textsf{\Large Enter your Employee ID here}$", placeholder = " Type Employee ID as E001 OR E012 to test the prototype")
 	df1 = pd.concat(map(pd.read_csv, ['E001_Week_1.csv','E012_Week_2.csv']))   
 	if emp_number:
 		data = df1[df1['EmployeeID'] == emp_number]
