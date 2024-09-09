@@ -119,7 +119,7 @@ if choice == "Medication Activity":
 if choice == "Emergency":
 	st.header(":red[We are Working on It! Thank you for your interest in our product. We are currently fine-tuning this feature to provide you with the best experience possible. Please check back soon!]")
 
-else: 
+if choice == "Home":
 	st.title("Glovalth Health Tech Care Limited")
 	st.subheader ("Who We Are")
 	st.info(""" ##### Proudly serving the UK’s care homes from our Leicester headquarters. We specialize in timesheet management solutions tailored for the care industry. Our tools simplify payroll, boost productivity, and ensure compliance. Partner with us for efficient and reliable staff management.""")
