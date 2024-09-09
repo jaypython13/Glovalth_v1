@@ -35,19 +35,7 @@ choice = option_menu('Menu', [ "Home","Login/Sign Up", "Employee Work Management
 #menu = ["About Us","Employee Work Management Portal", "Employee Attendence Form", "Care Planning for Care Home", "Medication Activity"]
 #choice = st.sidebar.selectbox( " ## Menu " ,menu)
 
-if choice == "Home":
-	st.title("Glovalth Health Tech Care Limited")
-	st.subheader ("Who We Are")
-	st.info(""" ##### Proudly serving the UK’s care homes from our Leicester headquarters. We specialize in timesheet management solutions tailored for the care industry. Our tools simplify payroll, boost productivity, and ensure compliance. Partner with us for efficient and reliable staff management.""")
-	st.subheader("What We Do")
-	st.info(""" ##### Our Business team ensures smooth and efficient operations, supporting every aspect of our business. From handling client inquiries to managing internal processes, they are the backbone of our organization. Their dedication to excellence and attention to detail guarantee high-quality service and operational integrity. Our primary objective is to develop comprehensive and standardized HR software applications tailored specifically for UK industries. We aim to provide solutions that streamline human resource management, enhance operational efficiency, and support the unique needs of businesses across various sectors in the UK. By leveraging advanced technology and industry best practices, we strive to deliver user-friendly and adaptable software that meets the evolving demands of the modern workforce.""")
-	st.subheader("How We Support")
-	st.info(""" ##### Our primary objective is to develop comprehensive and standardized HR software applications tailored specifically for UK industries. We aim to provide solutions that streamline human resource management, enhance operational efficiency, and support the unique needs of businesses across various sectors in the UK. By leveraging advanced technology and industry best practices, we strive to deliver user-friendly and adaptable software that meets the evolving demands of the modern workforce.""")
-	st.subheader("Reach Us")
-	st.info(""" ##### Get in touch with us today to discover how our HR management solutions can transform your business. Whether you have questions, need support, or want to schedule a consultation, our dedicated team is here to help. Reach out via phone, email, or our online form – we look forward to connecting with you!""")
-	st.info( """ ##### Address: St George’s House, 3rd floor, St George’s house, Leicestershire, United Kingdom.""")
-	st.info( """ ##### Call us: +44 7436 295021 """)
-	st.info( """ ##### Email: glovalthhealthtechcarelmt@gmail.com """)
+
 	
 if choice == "Task Completion Form":
 	st.title("Task Completion Form")
@@ -130,4 +118,17 @@ if choice == "Medication Activity":
 
 if choice == "Emergency":
 	st.header(":red[We are Working on It! Thank you for your interest in our product. We are currently fine-tuning this feature to provide you with the best experience possible. Please check back soon!]")
-		  
+
+else: 
+	st.title("Glovalth Health Tech Care Limited")
+	st.subheader ("Who We Are")
+	st.info(""" ##### Proudly serving the UK’s care homes from our Leicester headquarters. We specialize in timesheet management solutions tailored for the care industry. Our tools simplify payroll, boost productivity, and ensure compliance. Partner with us for efficient and reliable staff management.""")
+	st.subheader("What We Do")
+	st.info(""" ##### Our Business team ensures smooth and efficient operations, supporting every aspect of our business. From handling client inquiries to managing internal processes, they are the backbone of our organization. Their dedication to excellence and attention to detail guarantee high-quality service and operational integrity. Our primary objective is to develop comprehensive and standardized HR software applications tailored specifically for UK industries. We aim to provide solutions that streamline human resource management, enhance operational efficiency, and support the unique needs of businesses across various sectors in the UK. By leveraging advanced technology and industry best practices, we strive to deliver user-friendly and adaptable software that meets the evolving demands of the modern workforce.""")
+	st.subheader("How We Support")
+	st.info(""" ##### Our primary objective is to develop comprehensive and standardized HR software applications tailored specifically for UK industries. We aim to provide solutions that streamline human resource management, enhance operational efficiency, and support the unique needs of businesses across various sectors in the UK. By leveraging advanced technology and industry best practices, we strive to deliver user-friendly and adaptable software that meets the evolving demands of the modern workforce.""")
+	st.subheader("Reach Us")
+	st.info(""" ##### Get in touch with us today to discover how our HR management solutions can transform your business. Whether you have questions, need support, or want to schedule a consultation, our dedicated team is here to help. Reach out via phone, email, or our online form – we look forward to connecting with you!""")
+	st.info( """ ##### Address: St George’s House, 3rd floor, St George’s house, Leicestershire, United Kingdom.""")
+	st.info( """ ##### Call us: +44 7436 295021 """)
+	st.info( """ ##### Email: glovalthhealthtechcarelmt@gmail.com """)
