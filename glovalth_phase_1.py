@@ -17,7 +17,7 @@ img = Image.open('Glovalth_logo.png')
 st.image(img)
 st.header(":blue[Glovalth Health Tech Care Limited]") 
 st.subheader(":green[Empowering Care Homes with Smart Software Solutions for Seamless Operations and Exceptional Resident Care]")
-video_file = open("Glovalth_product_POC_V1.MP4", "rb")
+video_file = open("Glovalth_product_POC_V1.mp4", "rb")
 video_bytes = video_file.read()
 
 st.video(video_bytes)
