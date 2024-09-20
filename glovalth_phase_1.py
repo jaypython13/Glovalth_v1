@@ -18,10 +18,10 @@ st.image(img)
 st.header(":blue[Glovalth Health Tech Care Limited]") 
 st.subheader(":green[Empowering Care Homes with Smart Software Solutions for Seamless Operations and Exceptional Resident Care]")
 
+DEFAULT_WIDTH = 80
 width = st.sidebar.slider(
     label="Width", min_value=0, max_value=100, value=DEFAULT_WIDTH, format="%d%%"
 )
-
 width = max(width, 0.01)
 side = max((100 - width) / 2, 0.01)
 _, container, _ = st.columns([side, width, side])
