@@ -20,6 +20,7 @@ st.subheader(":green[Empowering Care Homes with Smart Software Solutions for Sea
 video_file = open("Glovalth_product_POC_V1.mp4", "rb")
 video_bytes = video_file.read()
 with st.sidebar:
+	st.title("Glovalth's prototype Demo")
 	video_file = open("Glovalth_product_POC_V1.mp4", "rb")
 	video_bytes = video_file.read()
 	DEFAULT_WIDTH = 80
