@@ -23,7 +23,7 @@ with st.sidebar:
 	video_file = open("Glovalth_product_POC_V1.mp4", "rb")
 	video_bytes = video_file.read()
 	DEFAULT_WIDTH = 80
-	container.video(data=video_bytes)
+	st.video(video_bytes)
 	
 
 
