@@ -18,12 +18,17 @@ st.image(img)
 st.header(":blue[Glovalth Health Tech Care Limited]") 
 st.subheader(":green[Empowering Care Homes with Smart Software Solutions for Seamless Operations and Exceptional Resident Care]")
 
-   
+width = st.sidebar.slider(
+    label="Width", min_value=0, max_value=100, value=DEFAULT_WIDTH, format="%d%%"
+)
+
+width = max(width, 0.01)
+side = max((100 - width) / 2, 0.01)
+_, container, _ = st.columns([side, width, side])
+container.video(data=video_bytes)  
 video_file = open("Glovalth_product_POC_V1.mp4", "rb")
 video_bytes = video_file.read()
-col1,col2=st.columns([1,3])   
-with col1:
-	st.video(video_bytes)
+
 	
 #choice1 = option_menu("Main Menu", ["Home", "Employee Work Management Portal", "Employee Attendence Form", "Care Planning for Care Home", "Medication Activity", "Document Verification for Care Home", "Emergency", ], 
 #icons=['house', 'list-task', 'cloud-upload', 'list-task', 'list-task','list-task'], menu_icon="cast", default_index=0)
