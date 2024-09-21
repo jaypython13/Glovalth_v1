@@ -17,12 +17,12 @@ from PIL import Image
     
 # Streamlit User Interface part
 st.set_page_config(page_title ="Glovalth", page_icon ="	:medical_symbol:", layout= "wide")
-
+st.page_link(video_bytes, label="Glovalth's prototype Demo", icon="🌎")
 img = Image.open('Glovalth_logo.png')
 st.image(img)
 st.header(":blue[Glovalth Health Tech Care Limited]") 
 st.subheader(":green[Empowering Care Homes with Smart Software Solutions for Seamless Operations and Exceptional Resident Care]")
-st.link_button("Go to Glovalth Prototoye Demo", "https://streamlit.io/gallery")
+st.link_button("Go to Glovalth Prototoye Demo", "")
 with st.sidebar:
 	st.title("Glovalth's prototype Demo")
 	video_file = open("Glovalth_product_POC_V1.mp4", "rb")
@@ -31,7 +31,6 @@ with st.sidebar:
     	st.video(video_bytes)
 
 
-	
 	
 
 
