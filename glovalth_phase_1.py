@@ -29,7 +29,7 @@ with st.sidebar:
 	st.video(video_bytes)
 
 	genre = st.radio(
-    		"***Let us know know your feedback about our Prototype***",
+    		"*****Let us know know your feedback about our Prototype*****",
     			["***Excellent***", "***Very Good***", "***Good***", "***Needs Improvement***"],)
 
 	
