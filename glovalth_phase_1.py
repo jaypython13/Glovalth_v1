@@ -21,7 +21,7 @@ st.image(img)
 st.header(":blue[Glovalth Health Tech Care Limited]") 
 st.subheader(":green[Empowering Care Homes with Smart Software Solutions for Seamless Operations and Exceptional Resident Care]")
 #st.button("Click below to view prortoype Demo" )
-if st.button("Glovalth prototype Demo",type="primary"):
+if st.button("***Click here for  Glovalth prototype Demo***",type="primary"):
 	video_file = open("Glovalth_product_POC_V1.mp4", "rb")
 	video_bytes = video_file.read()
 	DEFAULT_WIDTH = 50
