@@ -16,8 +16,6 @@ with tab1:
     st.header("Glovalth product Demo")
     video_file = open("Glovalth_product_POC_V1.mp4", "rb")
     video_bytes = video_file.read()
-    video_file = open("Glovalth_product_POC_V1.mp4", "rb")
-    video_bytes = video_file.read()
     st.video(video_bytes)
 # Streamlit User Interface part
 st.set_page_config(page_title ="Glovalth", page_icon ="	:medical_symbol:", layout= "wide")
