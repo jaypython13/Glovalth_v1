@@ -20,18 +20,20 @@ img = Image.open('Glovalth_logo.png')
 st.image(img)
 st.header(":blue[Glovalth Health Tech Care Limited]") 
 st.subheader(":green[Empowering Care Homes with Smart Software Solutions for Seamless Operations and Exceptional Resident Care]")
-
 with st.sidebar:
 	st.title("Glovalth's prototype Demo")
 	video_file = open("Glovalth_product_POC_V1.mp4", "rb")
 	video_bytes = video_file.read()
-	DEFAULT_WIDTH = 80
-	st.video(video_bytes)
-
+	DEFAULT_WIDTH = 80	
 	genre = st.radio(
     		"*****Let us know know your feedback about our Prototype*****",
     			["***Excellent***", "***Very Good***", "***Good***", "***Needs Improvement***"],)
 	st.write("Thank you for your feedback")
+st.button("Glovalth Prototype Demo", type="primary")
+if st.button("Say hello"):
+    st.video(video_bytes)
+	
+
 	
 #choice1 = option_menu("Main Menu", ["Home", "Employee Work Management Portal", "Employee Attendence Form", "Care Planning for Care Home", "Medication Activity", "Document Verification for Care Home", "Emergency", ], 
 #icons=['house', 'list-task', 'cloud-upload', 'list-task', 'list-task','list-task'], menu_icon="cast", default_index=0)
