@@ -16,7 +16,6 @@ from PIL import Image
     
 # Streamlit User Interface part
 st.set_page_config(page_title ="Glovalth", page_icon ="	:medical_symbol:", layout= "wide")
-st.page_link(video_bytes, label="Glovalth's prototype Demo", icon="🌎")
 img = Image.open('Glovalth_logo.png')
 st.image(img)
 st.header(":blue[Glovalth Health Tech Care Limited]") 
