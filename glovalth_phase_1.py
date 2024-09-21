@@ -10,21 +10,29 @@ import base64
 from pathlib import Path
 from PIL import Image
 
+
+tab1 = st.tabs(["Glovalth product Demo"])
+with tab1:
+    st.header("Glovalth product Demo")
+    video_file = open("Glovalth_product_POC_V1.mp4", "rb")
+    video_bytes = video_file.read()
+    video_file = open("Glovalth_product_POC_V1.mp4", "rb")
+    video_bytes = video_file.read()
+    st.video(video_bytes)
 # Streamlit User Interface part
 st.set_page_config(page_title ="Glovalth", page_icon ="	:medical_symbol:", layout= "wide")
-st.beta_set_page_config(initial_sidebar_state="expanded")
+
 img = Image.open('Glovalth_logo.png')
 st.image(img)
 st.header(":blue[Glovalth Health Tech Care Limited]") 
 st.subheader(":green[Empowering Care Homes with Smart Software Solutions for Seamless Operations and Exceptional Resident Care]")
-video_file = open("Glovalth_product_POC_V1.mp4", "rb")
-video_bytes = video_file.read()
-with st.sidebar:
-	st.title("Glovalth's prototype Demo")
-	video_file = open("Glovalth_product_POC_V1.mp4", "rb")
-	video_bytes = video_file.read()
-	DEFAULT_WIDTH = 80
-	st.video(video_bytes)
+
+#with st.sidebar:
+	#st.title("Glovalth's prototype Demo")
+	#video_file = open("Glovalth_product_POC_V1.mp4", "rb")
+	#video_bytes = video_file.read()
+	#DEFAULT_WIDTH = 80
+	
 	
 
 
