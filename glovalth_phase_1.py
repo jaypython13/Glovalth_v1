@@ -29,8 +29,8 @@ with st.sidebar:
 	st.video(video_bytes)
 
 	genre = st.radio(
-    		"Let us know know your feedback about our Prototype",
-    ["***Excellent***", "***Very Good***", "***Good***", "***Needs Improvement***"],)
+    		"***Let us know know your feedback about our Prototype***",
+    			["***Excellent***", "***Very Good***", "***Good***", "***Needs Improvement***"],)
 
 	
 #choice1 = option_menu("Main Menu", ["Home", "Employee Work Management Portal", "Employee Attendence Form", "Care Planning for Care Home", "Medication Activity", "Document Verification for Care Home", "Emergency", ], 
