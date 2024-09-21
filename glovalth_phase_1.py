@@ -28,6 +28,10 @@ with st.sidebar:
 	DEFAULT_WIDTH = 80
 	st.video(video_bytes)
 
+	genre = st.radio(
+    		"Rate our prototype",
+    ["***Excellent***", "***Very Good***", "***Good***", "***Needs Improvement***"],)
+
 	
 #choice1 = option_menu("Main Menu", ["Home", "Employee Work Management Portal", "Employee Attendence Form", "Care Planning for Care Home", "Medication Activity", "Document Verification for Care Home", "Emergency", ], 
 #icons=['house', 'list-task', 'cloud-upload', 'list-task', 'list-task','list-task'], menu_icon="cast", default_index=0)
