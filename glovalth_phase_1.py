@@ -24,8 +24,8 @@ st.subheader(":green[Empowering Care Homes with Smart Software Solutions for Sea
 if st.button("***Click here for  Glovalth prototype Demo***",type="primary"):
 	video_file = open("Glovalth_product_POC_V1.mp4", "rb")
 	video_bytes = video_file.read()
-	DEFAULT_WIDTH = 50
-	st.video(video_bytes)
+	#DEFAULT_WIDTH = 50
+	st.video(video_bytes, default_width =50)
 #with st.sidebar:
 	#genre = st.radio(
     		#"*****Let us know know your feedback about our Prototype*****",
