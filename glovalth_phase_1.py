@@ -15,7 +15,7 @@ from PIL import Image
     #st.header("Glovalth product Demo")
     
 # Streamlit User Interface part
-st.set_page_config(page_title ="Glovalth", page_icon ="	:medical_symbol:", layout= "wide", sidebar = "fixed")
+st.set_page_config(page_title ="Glovalth", page_icon ="	:medical_symbol:", layout= "wide", sidebar = "expanded")
 st.page_link(video_bytes, label="Glovalth's prototype Demo", icon="🌎")
 img = Image.open('Glovalth_logo.png')
 st.image(img)
