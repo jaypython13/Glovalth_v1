@@ -63,7 +63,7 @@ if choice == "Home":
 	st.info(""" ##### Get in touch with us today to discover how our HR management solutions can transform your business. Whether you have questions, need support, or want to schedule a consultation, our dedicated team is here to help. Reach out via phone, email, or our online form – we look forward to connecting with you!""")
 	st.info( """ ##### Address: St George’s House, 3rd floor, St George’s house, Leicestershire, United Kingdom.""")
 	st.info( """ ##### Call us: +44 7436 295021 """)
-	st.info( """ ##### Email: glovalthhealthtechcarelmt@gmail.com """)
+	st.info( """ ##### Email: info@glovalthealthtech.co.uk """)
 	
 if choice == "Task Completion Form":
 	st.title("Task Completion Form")
